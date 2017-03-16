@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getCompanyInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCompanyInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCompanyInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCompanyInfoWithRegiNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyRegiNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCompanyInfoWithRegiNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCompanyInfoWithRegiNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCompanyRegiNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyRegiNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCompanyRegiNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckCompanyRegiNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineIpList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineIpListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachineIpListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineIpList_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineIpList_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachineIpList_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEntireMemorymaps_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mapTypes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEntireMemorymaps_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEntireMemorymaps_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMemorymap_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mapType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMemorymap_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMemorymap_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMemorymap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mapType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMemorymapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMemorymapResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineDatatable_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldCodes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="selectedDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineDatatable_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachineDatatable_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getErrorList_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getErrorList_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getErrorList_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEntireErrorList_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEntireErrorList_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEntireErrorList_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyInfoWithAuthentication_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyRegiNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPw" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyInfoWithAuthentication_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyInfoWithAuthentication_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserInformation_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserInformation_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserInformation_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFcmToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fcmToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="allowPush" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFcmTokenResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getCompanyInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getCompanyInfo" />
+  </wsdl:message>
+  <wsdl:message name="getCompanyInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getCompanyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCompanyInfoWithRegiNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:getCompanyInfoWithRegiNumber" />
+  </wsdl:message>
+  <wsdl:message name="getCompanyInfoWithRegiNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:getCompanyInfoWithRegiNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCompanyRegiNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCompanyRegiNumber" />
+  </wsdl:message>
+  <wsdl:message name="CheckCompanyRegiNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCompanyRegiNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMachineIpListSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachineIpList" />
+  </wsdl:message>
+  <wsdl:message name="getMachineIpListSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachineIpListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMachineIpList_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachineIpList_Json" />
+  </wsdl:message>
+  <wsdl:message name="getMachineIpList_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachineIpList_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEntireMemorymaps_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getEntireMemorymaps_Json" />
+  </wsdl:message>
+  <wsdl:message name="getEntireMemorymaps_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getEntireMemorymaps_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMemorymap_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getMemorymap_Json" />
+  </wsdl:message>
+  <wsdl:message name="getMemorymap_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getMemorymap_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMemorymapSoapIn">
+    <wsdl:part name="parameters" element="tns:getMemorymap" />
+  </wsdl:message>
+  <wsdl:message name="getMemorymapSoapOut">
+    <wsdl:part name="parameters" element="tns:getMemorymapResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMachineDatatable_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachineDatatable_Json" />
+  </wsdl:message>
+  <wsdl:message name="getMachineDatatable_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachineDatatable_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getErrorList_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getErrorList_Json" />
+  </wsdl:message>
+  <wsdl:message name="getErrorList_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getErrorList_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEntireErrorList_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getEntireErrorList_Json" />
+  </wsdl:message>
+  <wsdl:message name="getEntireErrorList_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getEntireErrorList_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyInfoWithAuthentication_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfoWithAuthentication_Json" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyInfoWithAuthentication_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfoWithAuthentication_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserInformation_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserInformation_Json" />
+  </wsdl:message>
+  <wsdl:message name="getUserInformation_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserInformation_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFcmTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFcmToken" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFcmTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFcmTokenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="getCompanyInfo">
+      <wsdl:input message="tns:getCompanyInfoSoapIn" />
+      <wsdl:output message="tns:getCompanyInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyInfoWithRegiNumber">
+      <wsdl:input message="tns:getCompanyInfoWithRegiNumberSoapIn" />
+      <wsdl:output message="tns:getCompanyInfoWithRegiNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCompanyRegiNumber">
+      <wsdl:input message="tns:CheckCompanyRegiNumberSoapIn" />
+      <wsdl:output message="tns:CheckCompanyRegiNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList">
+      <wsdl:input message="tns:getMachineIpListSoapIn" />
+      <wsdl:output message="tns:getMachineIpListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList_Json">
+      <wsdl:input message="tns:getMachineIpList_JsonSoapIn" />
+      <wsdl:output message="tns:getMachineIpList_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEntireMemorymaps_Json">
+      <wsdl:input message="tns:getEntireMemorymaps_JsonSoapIn" />
+      <wsdl:output message="tns:getEntireMemorymaps_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap_Json">
+      <wsdl:input message="tns:getMemorymap_JsonSoapIn" />
+      <wsdl:output message="tns:getMemorymap_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap">
+      <wsdl:input message="tns:getMemorymapSoapIn" />
+      <wsdl:output message="tns:getMemorymapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachineDatatable_Json">
+      <wsdl:input message="tns:getMachineDatatable_JsonSoapIn" />
+      <wsdl:output message="tns:getMachineDatatable_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList_Json">
+      <wsdl:input message="tns:getErrorList_JsonSoapIn" />
+      <wsdl:output message="tns:getErrorList_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEntireErrorList_Json">
+      <wsdl:input message="tns:getEntireErrorList_JsonSoapIn" />
+      <wsdl:output message="tns:getEntireErrorList_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfoWithAuthentication_Json">
+      <wsdl:input message="tns:GetCompanyInfoWithAuthentication_JsonSoapIn" />
+      <wsdl:output message="tns:GetCompanyInfoWithAuthentication_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserInformation_Json">
+      <wsdl:input message="tns:getUserInformation_JsonSoapIn" />
+      <wsdl:output message="tns:getUserInformation_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFcmToken">
+      <wsdl:input message="tns:UpdateFcmTokenSoapIn" />
+      <wsdl:output message="tns:UpdateFcmTokenSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCompanyInfo">
+      <soap:operation soapAction="http://tempuri.org/getCompanyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyInfoWithRegiNumber">
+      <soap:operation soapAction="http://tempuri.org/getCompanyInfoWithRegiNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCompanyRegiNumber">
+      <soap:operation soapAction="http://tempuri.org/CheckCompanyRegiNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList">
+      <soap:operation soapAction="http://tempuri.org/getMachineIpList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList_Json">
+      <soap:operation soapAction="http://tempuri.org/getMachineIpList_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEntireMemorymaps_Json">
+      <soap:operation soapAction="http://tempuri.org/getEntireMemorymaps_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap_Json">
+      <soap:operation soapAction="http://tempuri.org/getMemorymap_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap">
+      <soap:operation soapAction="http://tempuri.org/getMemorymap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineDatatable_Json">
+      <soap:operation soapAction="http://tempuri.org/getMachineDatatable_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList_Json">
+      <soap:operation soapAction="http://tempuri.org/getErrorList_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEntireErrorList_Json">
+      <soap:operation soapAction="http://tempuri.org/getEntireErrorList_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfoWithAuthentication_Json">
+      <soap:operation soapAction="http://tempuri.org/GetCompanyInfoWithAuthentication_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInformation_Json">
+      <soap:operation soapAction="http://tempuri.org/getUserInformation_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFcmToken">
+      <soap:operation soapAction="http://tempuri.org/UpdateFcmToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCompanyInfo">
+      <soap12:operation soapAction="http://tempuri.org/getCompanyInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyInfoWithRegiNumber">
+      <soap12:operation soapAction="http://tempuri.org/getCompanyInfoWithRegiNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCompanyRegiNumber">
+      <soap12:operation soapAction="http://tempuri.org/CheckCompanyRegiNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList">
+      <soap12:operation soapAction="http://tempuri.org/getMachineIpList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineIpList_Json">
+      <soap12:operation soapAction="http://tempuri.org/getMachineIpList_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEntireMemorymaps_Json">
+      <soap12:operation soapAction="http://tempuri.org/getEntireMemorymaps_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap_Json">
+      <soap12:operation soapAction="http://tempuri.org/getMemorymap_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMemorymap">
+      <soap12:operation soapAction="http://tempuri.org/getMemorymap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineDatatable_Json">
+      <soap12:operation soapAction="http://tempuri.org/getMachineDatatable_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList_Json">
+      <soap12:operation soapAction="http://tempuri.org/getErrorList_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEntireErrorList_Json">
+      <soap12:operation soapAction="http://tempuri.org/getEntireErrorList_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfoWithAuthentication_Json">
+      <soap12:operation soapAction="http://tempuri.org/GetCompanyInfoWithAuthentication_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInformation_Json">
+      <soap12:operation soapAction="http://tempuri.org/getUserInformation_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFcmToken">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFcmToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://drumshowasp1.cafe24.com/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://drumshowasp1.cafe24.com/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

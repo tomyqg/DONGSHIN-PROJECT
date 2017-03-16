@@ -1,0 +1,4 @@
+﻿180058966 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 329
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 157
+

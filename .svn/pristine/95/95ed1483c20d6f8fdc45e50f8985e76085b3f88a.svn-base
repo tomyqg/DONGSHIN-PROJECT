@@ -1,0 +1,32 @@
+﻿160638347 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getSingleMachineDataOnClient(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 563
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 179
+
+160639528 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getSingleMachineDataOnClient(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 563
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 179
+
+170953935 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+170956126 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+171003837 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+171005925 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+171010750 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+171012811 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 463
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+

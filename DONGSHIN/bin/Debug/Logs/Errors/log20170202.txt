@@ -1,0 +1,224 @@
+﻿134908411 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134913317 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134918374 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134923304 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134928416 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134933389 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134938326 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134943346 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134948388 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134953393 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+134958421 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135146972 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135151960 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135156950 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135306615 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135311658 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135316594 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135321715 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135326835 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135331678 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135336730 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135341735 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135428753 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135433790 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135438736 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135443737 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135448734 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135453712 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135544489 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135606351 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+135611323 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 255
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_main.cs:줄 263
+
+141735480 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141737592 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141739697 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141741784 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141743862 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141745973 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+14174891 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141750177 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141752298 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141754455 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141756572 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141758693 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141800790 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141802861 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141804956 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+14180722 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+14180999 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141811180 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141813245 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141815306 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141817377 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141819454 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+
+141821516 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141823596 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 308
+
+141825676 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 486
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 429
+

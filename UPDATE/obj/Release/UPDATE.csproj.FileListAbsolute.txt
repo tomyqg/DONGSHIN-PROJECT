@@ -1,0 +1,13 @@
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\bin\Release\Update.exe
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\bin\Release\Update.pdb
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\bin\Release\DotNetFile.DLL
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\bin\Release\Ionic.Zip.DLL
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\UPDATE.Properties.Resources.resources
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\SmartQUpdate.AutoUpdate.resources
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\SmartQUpdate.Properties.Resources.resources
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\UPDATE.csproj.GenerateResource.Cache
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\Update.exe
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\Update.pdb
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\UPDATE.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2012\Projects\DONGSHIN\Update\obj\Release\Update.exe.licenses
+D:\Visual Studio 2012\Projects\DONGSHIN\UPDATE\obj\Release\SmartQUpdate.ClientAuthentication.resources

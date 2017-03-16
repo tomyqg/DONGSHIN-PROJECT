@@ -1,0 +1,198 @@
+﻿085334257 : Message: 클라이언트의 응답 콘텐츠 형식이 'text/html'입니다. 'text/xml'여야 합니다.
+다음 오류 메시지로 인해 요청하지 못했습니다.
+--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987"/>
+<title>500 - ???? ???? ????.</title>
+<style type="text/css">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id="header"><h1>???? ????</h1></div>
+<div id="content">
+ <div class="content-container"><fieldset>
+  <h2>500 - ???? ???? ????.</h2>
+  <h3>???? ???? ???????? ?????? ???? ?????? ?? ????????.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>
+
+--.
+StackTrace:    위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: ModbusTcp.WebReference.WebService1.SelectData(String CompanyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\Web References\WebReference\Reference.cs:줄 196
+   위치: ModbusTcp.MethodMain.LoadCompanyInfo(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 48
+   위치: ModbusTcp.MethodMain.LoadDefaultSettings(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 468
+   위치: DONGSHIN.frm_worker_home..ctor() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 63
+
+085336538 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 151
+
+09490513 : Message: 클라이언트의 응답 콘텐츠 형식이 'text/html'입니다. 'text/xml'여야 합니다.
+다음 오류 메시지로 인해 요청하지 못했습니다.
+--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987"/>
+<title>500 - ???? ???? ????.</title>
+<style type="text/css">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id="header"><h1>???? ????</h1></div>
+<div id="content">
+ <div class="content-container"><fieldset>
+  <h2>500 - ???? ???? ????.</h2>
+  <h3>???? ???? ???????? ?????? ???? ?????? ?? ????????.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>
+
+--.
+StackTrace:    위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: ModbusTcp.WebReference.WebService1.SelectData(String CompanyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\Web References\WebReference\Reference.cs:줄 196
+   위치: ModbusTcp.MethodMain.LoadCompanyInfo(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 48
+   위치: ModbusTcp.MethodMain.LoadDefaultSettings(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 468
+   위치: DONGSHIN.frm_worker_home..ctor() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 63
+
+094907940 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 151
+
+10371593 : Message: 클라이언트의 응답 콘텐츠 형식이 'text/html'입니다. 'text/xml'여야 합니다.
+다음 오류 메시지로 인해 요청하지 못했습니다.
+--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987"/>
+<title>500 - ???? ???? ????.</title>
+<style type="text/css">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id="header"><h1>???? ????</h1></div>
+<div id="content">
+ <div class="content-container"><fieldset>
+  <h2>500 - ???? ???? ????.</h2>
+  <h3>???? ???? ???????? ?????? ???? ?????? ?? ????????.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>
+
+--.
+StackTrace:    위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: ModbusTcp.WebReference.WebService1.SelectData(String CompanyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\Web References\WebReference\Reference.cs:줄 196
+   위치: ModbusTcp.MethodMain.LoadCompanyInfo(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 48
+   위치: ModbusTcp.MethodMain.LoadDefaultSettings(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 468
+   위치: DONGSHIN.frm_worker_home..ctor() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 67
+
+103717293 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 155
+
+103736666 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 155
+
+110018829 : Message: 클라이언트의 응답 콘텐츠 형식이 'text/html'입니다. 'text/xml'여야 합니다.
+다음 오류 메시지로 인해 요청하지 못했습니다.
+--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987"/>
+<title>500 - ???? ???? ????.</title>
+<style type="text/css">
+<!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+-->
+</style>
+</head>
+<body>
+<div id="header"><h1>???? ????</h1></div>
+<div id="content">
+ <div class="content-container"><fieldset>
+  <h2>500 - ???? ???? ????.</h2>
+  <h3>???? ???? ???????? ?????? ???? ?????? ?? ????????.</h3>
+ </fieldset></div>
+</div>
+</body>
+</html>
+
+--.
+StackTrace:    위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: ModbusTcp.WebReference.WebService1.SelectData(String CompanyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\Web References\WebReference\Reference.cs:줄 196
+   위치: ModbusTcp.MethodMain.LoadCompanyInfo(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 48
+   위치: ModbusTcp.MethodMain.LoadDefaultSettings(String companyCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 468
+   위치: DONGSHIN.frm_worker_home..ctor() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 67
+
+110021633 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 155
+
+110050759 : Message: 지정한 키가 사전에 없습니다.
+StackTrace:    위치: System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   위치: ModbusTcp.MethodMain.RequestValueFromServerSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 264
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 155
+
+111326711 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 328
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 157
+

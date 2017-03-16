@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<controls>
+  <control>
+    <kor>감속</kor>
+    <eng>Reduced Velocity</eng>
+  </control>
+  <control>
+    <kor>고속</kor>
+    <eng>High Velocity</eng>
+  </control>
+  <control>
+    <kor>고압1</kor>
+    <eng>High Pressure1</eng>
+  </control>
+  <control>
+    <kor>고정</kor>
+    <eng>Fixed</eng>
+  </control>
+  <control>
+    <kor>금형보호1</kor>
+    <eng>Mold Protect1</eng>
+  </control>
+  <control>
+    <kor>금형보호2</kor>
+    <eng>Mold Protect2</eng>
+  </control>
+  <control>
+    <kor>동작위치</kor>
+    <eng>Operaing Point</eng>
+  </control>
+  <control>
+    <kor>속도</kor>
+    <eng>Velocity</eng>
+  </control>
+  <control>
+    <kor>시간</kor>
+    <eng>Time</eng>
+  </control>
+  <control>
+    <kor>실제 금형보호 시간</kor>
+    <eng>Actual Mold Protection Time</eng>
+  </control>
+  <control>
+    <kor>실제위치</kor>
+    <eng>Actual Location</eng>
+  </control>
+  <control>
+    <kor>압력</kor>
+    <eng>Pressure</eng>
+  </control>
+  <control>
+    <kor>에어브라스트 파라미터</kor>
+    <eng>Airblast Parameter</eng>
+  </control>
+  <control>
+    <kor>위치</kor>
+    <eng>Location</eng>
+  </control>
+  <control>
+    <kor>이동</kor>
+    <eng>Move</eng>
+  </control>
+  <control>
+    <kor>이젝터 파라미터</kor>
+    <eng>Ejector Parameter</eng>
+  </control>
+  <control>
+    <kor>작동시간</kor>
+    <eng>Operating Time</eng>
+  </control>
+  <control>
+    <kor>저속</kor>
+    <eng>Low Velocity</eng>
+  </control>
+  <control>
+    <kor>전진</kor>
+    <eng>Forward</eng>
+  </control>
+  <control>
+    <kor>전진1차</kor>
+    <eng>Forward 1st</eng>
+  </control>
+  <control>
+    <kor>전진완료</kor>
+    <eng>Forward Complete</eng>
+  </control>
+  <control>
+    <kor>지연시간</kor>
+    <eng>Delay Time</eng>
+  </control>
+  <control>
+    <kor>형개</kor>
+    <eng>Mold Opening</eng>
+  </control>
+  <control>
+    <kor>형개폐 파라미터</kor>
+    <eng>Mold Opening/Closing Parameter</eng>
+  </control>
+  <control>
+    <kor>형폐</kor>
+    <eng>Mold Closing</eng>
+  </control>
+  <control>
+    <kor>후진</kor>
+    <eng>Backward</eng>
+  </control>
+  <control>
+    <kor>후진1차</kor>
+    <eng>Backward 1st</eng>
+  </control>
+  <control>
+    <kor>후진완료</kor>
+    <eng>Backward Complete</eng>
+  </control>
+</controls>

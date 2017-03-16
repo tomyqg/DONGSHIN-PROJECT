@@ -1,0 +1,188 @@
+﻿102018322 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 329
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 157
+
+102330406 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32 machineId, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 329
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 157
+
+104722362 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+104835892 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+104944802 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105043550 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105107853 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105302943 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105453430 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105504502 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+105830206 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+110021109 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+131419926 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+131729986 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 159
+
+13303410 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 317
+
+133037744 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 317
+
+133041315 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 317
+
+133043949 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 317
+
+133046136 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 317
+
+133154425 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 314
+
+133201468 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 314
+
+133204516 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 314
+
+140030647 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 342
+
+140322282 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 344
+
+140401783 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setSelect() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 344
+
+142135754 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 378
+
+142139325 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 378
+
+142748981 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142751680 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142754397 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142757162 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142759500 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142801284 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142802930 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142804484 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142840498 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+142854827 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 404
+
+14360170 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 416
+
+143603157 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 416
+
+143815573 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143817335 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143826894 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143828695 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143832629 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143834946 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143838645 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+143842383 : Message: 서버 접속 실패
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+

@@ -1,0 +1,678 @@
+﻿using ModbusTcp;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading;
+using System.Windows.Forms;
+using System.Xml;
+
+namespace DONGSHIN
+{
+    public partial class frm_worker_home : Form
+    {
+        //---------------------------------메뉴 선택 구분을 위한 설정
+
+        public class TileDetail
+        {
+            public BaseControl BodyControl { set; get; }
+            public BaseControl RightControl { set; get; }
+        }
+
+        private readonly string MACHINE_CODE;
+        private readonly string MACHINE_TYPE;
+        private MachineInformation machineInfo;
+
+        private DevExpress.XtraEditors.TileControl selectedMenu = new DevExpress.XtraEditors.TileControl();
+        private DevExpress.XtraEditors.TileControl [] tileMenus;
+        BaseControl[] bodyControls = new BaseControl[6];
+        BaseControl[] rightControls = new BaseControl[6];
+
+        public frm_worker_home(MachineInformation information )
+        {
+            InitializeComponent();
+
+            machineInfo = information;
+            MACHINE_CODE = machineInfo.MachineCode;
+            MACHINE_TYPE = machineInfo.MachineType;
+            initializeTileMenus();
+            commonFX.setThisLanguage(this);            
+            
+        }
+
+
+        private void frm_home_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (machineInfo != null)
+                {
+                    displayMachineInformation(machineInfo);
+                }
+            }
+            catch (Exception ex)
+            {
+                LogWriter.WriteLog_Error(ex);
+            }
+
+
+            string date = string.Format("{0:yyyy.MM.dd}", DateTime.Today);
+            this.lbl_verdate.Text = date + "\r\nv" + commonVar.version;
+            this.lbl_user.Text = commonVar.login_name;
+            
+            mouse_click(drop_clamp, null);
+            
+            getMachineStateAndDisplay();
+            getMoldNameAndDisplay();
+        }
+
+
+
+        private void initializeTileMenus()
+        {
+            tileMenus = new DevExpress.XtraEditors.TileControl[]{ drop_clamp, drop_inject, drop_temp, drop_core, drop_monitor, drop_condition};
+            
+            bodyControls = new BaseControl[6];
+            rightControls = new BaseControl[6];
+            switch (MACHINE_TYPE.ToUpper())
+            {
+                
+                case "MC":
+                case "KT":
+                case "PL":
+                    bodyControls = new BaseControl[] { new mcBody_1(), new mcBody_2(), new mcBody_3(), new mcBody_4(), new mcBody_5(), new mcBody_6()};
+                    rightControls = new BaseControl[] { new mcRight_1(), new mcRight_2(), new mcRight_3(), new mcRight_4(), new mcRight_5(), new mcRight_6() };
+                    break;
+                case "GB":
+                    bodyControls = new BaseControl[] { new gbBody_1(), new gbBody_2(), new gbBody_3(), new gbBody_4(), new gbBody_5(), new gbBody_6() };
+                    rightControls = new BaseControl[] { new gbRight_1(), new gbRight_2(), new gbRight_3(), new gbRight_4(), new gbRight_5(), new gbRight_6() };
+                    break;
+                case "RB":
+                    bodyControls = new BaseControl[] { new rbBody_1(), new rbBody_2(), new rbBody_3(), new rbBody_4(), new rbBody_5(), new rbBody_6() };
+                    rightControls = new BaseControl[] { new rbRight_1(), new rbRight_2(), new rbRight_3(), new rbRight_4(), new rbRight_5(), new rbRight_6() };
+                    break;
+            }
+
+
+            for (int i = 0; i < tileMenus.Length; i++)
+            {
+                commonFX.setThisLanguage(bodyControls[i]);
+                commonFX.setThisLanguage(rightControls[i]);
+                panel1.Controls.Add(bodyControls[i]);
+                bodyControls[i].Dock = DockStyle.Fill;
+                pan_right.Controls.Add(rightControls[i]);
+                bodyControls[i].Dock = DockStyle.Fill;
+
+                TileDetail detail = new TileDetail();
+                detail.BodyControl = bodyControls[i];
+                detail.RightControl = rightControls[i];
+
+                tileMenus[i].Tag = detail;
+
+
+                tileMenus[i].MouseHover += new EventHandler(mouse_hovered);
+                tileMenus[i].MouseLeave += new EventHandler(mouse_leaved);
+                tileMenus[i].MouseClick += new MouseEventHandler(mouse_click);
+            }
+
+        }
+
+        private void mouse_hovered(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.TileControl menu = sender as DevExpress.XtraEditors.TileControl;
+            TileDetail detail = menu.Tag as TileDetail;
+            if (selectedMenu != menu)
+                menu.BackgroundImage = menu.AppearanceItem.Hovered.Image;
+            
+            
+        }
+
+        private void mouse_leaved(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.TileControl menu = sender as DevExpress.XtraEditors.TileControl;
+            if(selectedMenu != menu)
+                menu.BackgroundImage = menu.AppearanceItem.Normal.Image;
+            
+        }
+
+        private void mouse_click(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.TileControl menu = sender as DevExpress.XtraEditors.TileControl;
+            selectedMenu = menu;
+            for (int index=0; index < tileMenus.Length ; index++)
+            {
+                DevExpress.XtraEditors.TileControl tileMenu = tileMenus[index];
+                if (selectedMenu == tileMenu)
+                {
+                    tileMenu.BackgroundImage = tileMenu.AppearanceItem.Selected.Image;
+                }
+                else
+                {
+                    tileMenu.BackgroundImage = tileMenu.AppearanceItem.Normal.Image;
+                }
+            }
+
+            getDataAndDisplay();
+        }
+
+        #region 오른쪽 설정값 패널 open/close 관련 이벤트 
+
+        private void frm_home_SizeChanged(object sender, EventArgs e)
+        {
+            if ( this.Width <= 1600 )
+            {
+                pan_rightmost.Visible = true;
+                pan_right.Visible = false;
+            }
+
+            if ( this.Width > 1600 )
+            {
+                pan_right.Visible = true;
+                pan_rightmost.Visible = false;
+            }
+        }
+
+        private void menu_rightmost_Click(object sender, EventArgs e)
+        {
+            if ( pan_right.Visible == true )
+            {
+                pan_right.Visible = false;
+               // menu_rightmost.BackgroundImage = Properties.Resources.ResolutionChangedClose;
+            }
+            else
+            {
+                pan_right.Visible = true;
+              //  menu_rightmost.BackgroundImage = Properties.Resources.ResolutionChangedOpen;
+            }
+        }
+        #endregion 
+
+
+        //사용자-관리자 모드변환
+        private void menu_switch_Click(object sender, EventArgs e)
+        {
+            if ( commonVar.user_gbn == "M" )
+            {
+                frm_manager_home manager = new frm_manager_home();
+                Program.ac.MainForm = manager;
+                manager.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("접근 권한이 없습니다. \n\r관리자모드로 접속하세요.","사용자모드 주의");
+            }
+        }
+
+        private void drop_home_Click(object sender, EventArgs e)
+        {
+            frm_worker_main main = new frm_worker_main();
+            Program.ac.MainForm = main;
+            main.Show();
+            this.Close();
+        }
+
+
+
+        private void displayMachineInformation(MachineInformation machineInfo)
+        {
+            try
+            {   
+                string machineType = machineInfo.MachineType;
+                menu_machine.Text = machineType;
+                
+                string machineNumber = machineInfo.MachineNumber.ToString();
+                menu_num.Text = machineNumber;
+
+                setColorOfMachine(machineType);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private void setColorOfMachine(string machineType) 
+        {
+            switch ( machineType )             
+            { 
+                case "GB":
+                    menu_machine.BackColor = Color.FromArgb(85, 178, 212);                    
+                    break;
+                case "RB":
+                    menu_machine.BackColor = Color.FromArgb(3, 110, 183);
+                    break;
+                case "PL":
+                    menu_machine.BackColor = Color.FromArgb(77, 125, 145);
+                    break;
+                case "KT":
+                    menu_machine.BackColor = Color.FromArgb(77, 102, 142);
+                    break;
+            }
+            lbl_type.BackColor = menu_machine.BackColor;
+        }
+
+        private delegate void controlFlasher(Control control, Color color);
+        private void flashControl(Control control, Color color)
+        {
+            if (control.InvokeRequired)
+            {
+                controlFlasher callback = new controlFlasher(flashControl);
+                control.Invoke(callback, new object[] { control, color });
+            }
+            else
+            {
+                control.BackColor = color;
+            }
+        }
+
+        private void showCycleComplete(object sender, EventArgs e)
+        {
+            flashControl(menu_info, Color.Gray);
+            for (int i = 0; i < 10; i++ )
+            {
+                Thread.Sleep(300);
+                if (menu_info.BackColor == Color.Gray)
+                {
+                    flashControl(menu_info, Color.Red);
+                }
+                else
+                    flashControl(menu_info, Color.Gray);
+            }
+            
+        }
+
+        private void dataUpdateTimer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                updateData();
+            }catch{
+            }
+            
+        }
+
+        private void updateData()
+        {
+            getDataAndDisplay();
+            getMoldNameAndDisplay();
+            getMachineStateAndDisplay();
+        }
+
+        private void frm_worker_home_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                dataUpdateTimer.Stop();
+                dataUpdateTimer.Dispose();
+
+            }catch(Exception Exception){
+                LogWriter.FileBasePath = Application.StartupPath;
+                LogWriter.WriteLog_Error(Exception);
+            }
+            
+        }
+
+        private void getDataAndDisplay()
+        {
+            TileDetail detail = selectedMenu.Tag as TileDetail;
+            BaseControl body = detail.BodyControl;
+            BaseControl right = detail.RightControl;
+
+            string[] codes1 = body.getFieldCodes();
+            string[] codes2 = right.getFieldCodes();
+
+            DataDisplayParameter parameter1 = new DataDisplayParameter();
+            parameter1.MachineCodes = new string[] { MACHINE_CODE };
+            parameter1.FieldCodes = codes1;
+            DataDisplayCallback callback1 = new DataDisplayCallback(DisplayDataBody);
+            parameter1.Callback = callback1;
+
+            DataDisplayParameter parameter2 = new DataDisplayParameter();
+            parameter2.MachineCodes = new string[] { MACHINE_CODE };
+            parameter2.FieldCodes = codes2;
+            DataDisplayCallback callback2 = new DataDisplayCallback(DisplayDataRight);
+            parameter2.Callback = callback2;
+
+            if (commonVar.IsThisServer)
+            {
+                MethodMain.showMachineDataFromServer(parameter1);
+                MethodMain.showMachineDataFromServer(parameter2);
+            }
+            else
+            {
+                MethodMain.showMachineDataFromClient(parameter1);
+                MethodMain.showMachineDataFromClient(parameter2);
+            }
+            
+            body.BringToFront();
+            right.BringToFront();
+        }
+
+        private void getMoldNameAndDisplay()
+        {
+            string[] fieldCodesForMoldname = SpecialFieldCodes.moldNameCodes;
+            DataDisplayParameter parameter1 = new DataDisplayParameter();
+            parameter1.MachineCodes = new string[] { MACHINE_CODE };
+            parameter1.FieldCodes = fieldCodesForMoldname;
+            DataDisplayCallback callback1 = new DataDisplayCallback(DisplayMoldName);
+            parameter1.Callback = callback1;
+
+
+            if (commonVar.IsThisServer)
+            {
+                MethodMain.showMachineDataFromServer(parameter1);
+            }
+            else
+            {
+                MethodMain.showMachineDataFromClient(parameter1);
+            }
+        }
+
+        private void getMachineStateAndDisplay()
+        {
+            string[] stateFieldCodes = SpecialFieldCodes.stateCodes;
+            DataDisplayParameter parameter1 = new DataDisplayParameter();
+            parameter1.MachineCodes = new string[] { MACHINE_CODE };
+            parameter1.FieldCodes = stateFieldCodes;
+            DataDisplayCallback callback1 = new DataDisplayCallback(DisplayMachineState);
+            parameter1.Callback = callback1;
+
+
+            if (commonVar.IsThisServer)
+            {
+                MethodMain.showMachineDataFromServer(parameter1);
+            }
+            else
+            {
+                MethodMain.showMachineDataFromClient(parameter1);
+            }
+        }
+
+        private void DisplayDataBody(TcpResponse tcpResponse)
+        {
+            TileDetail detail = selectedMenu.Tag as TileDetail;
+            BaseControl body = detail.BodyControl;
+
+            if (tcpResponse.Exception != null)
+            {
+                LogWriter.WriteLog_Error(tcpResponse.Exception);
+            }else
+            { 
+                MachineResponseData [] machineResponse = tcpResponse.MachineResponses;
+                if( machineResponse[0].Message.Length > 0 ){
+                    //사출기 문제 발생
+                }
+                else if(machineResponse[0].IsConnected == false){
+                    //사출기 통신 안됨
+                }
+                else{
+                    //정상
+                    body.DisplayData(machineResponse[0].MachineData);
+                }
+            }
+            
+        }
+
+        private void DisplayDataRight(TcpResponse tcpResponse)
+        {
+            TileDetail detail = selectedMenu.Tag as TileDetail;
+            BaseControl right = detail.RightControl;
+
+            if (tcpResponse.Exception != null)
+            {
+                LogWriter.WriteLog_Error(tcpResponse.Exception);
+            }
+            else
+            {
+                MachineResponseData[] machineResponse = tcpResponse.MachineResponses;
+                if (machineResponse[0].Message.Length > 0)
+                {
+                    //사출기 문제 발생
+                }
+                else if (machineResponse[0].IsConnected == false)
+                {
+                    //사출기 통신 안됨
+                }
+                else
+                {
+                    if ( right is gbRight_6 || right is rbRight_6 || right is mcRight_6 )
+                    {
+                        Dictionary<string, string> WorkOrderData = new Dictionary<string, string>();
+                        string name = right.Name;
+                        switch ( name ) 
+                        { 
+                            case "gbRight_6":
+                                gbRight_6 typeGB = new gbRight_6();
+                                WorkOrderData = typeGB.GetWorkOrderData(machineResponse[0].MachineCode);
+                                typeGB.MatchWorkOrderData(WorkOrderData, machineResponse[0].MachineData);
+                                break;
+                            case "rbRight_6":
+                                rbRight_6 typeRB = new rbRight_6();
+                                WorkOrderData = typeRB.GetWorkOrderData(machineResponse[0].MachineCode);
+                                typeRB.MatchWorkOrderData(WorkOrderData, machineResponse[0].MachineData);
+                                break;
+                            case "mcRight_6":
+                                mcRight_6 typeMC = new mcRight_6();
+                                WorkOrderData = typeMC.GetWorkOrderData(machineResponse[0].MachineCode);
+                                typeMC.MatchWorkOrderData(WorkOrderData, machineResponse[0].MachineData);
+                                break;
+                        }
+                        right.DisplayData(machineResponse[0].MachineData);
+                    }
+                    else
+                        right.DisplayData(machineResponse[0].MachineData);
+                }
+            }
+        }
+
+        private void DisplayMoldName(TcpResponse tcpResponse)
+        {
+            if (tcpResponse.Exception == null)
+            {
+                MachineResponseData responseData = tcpResponse.MachineResponses[0];
+                if (responseData.Message.Length > 0)
+                {
+                    //사출기 문제발생
+                }
+                else
+                {
+                    Dictionary<string, string> machineData = responseData.MachineData;
+                    string[] fieldCodes = machineData.Keys.ToArray();
+                    string moldName = string.Empty;
+                    for (int i = 0; i < machineData.Count; i++)
+                    {
+                        string fieldCode = fieldCodes[i];
+                        string valueString = machineData.GetValueOrDefault(fieldCode);
+                        decimal valueDecimal;
+                        if (decimal.TryParse(valueString, out valueDecimal))
+                        {
+                            char charA = (char)(valueDecimal / 256);
+                            char charB = (char)(valueDecimal % 256);
+                            moldName += charA;
+                            moldName += charB;
+                        }
+                    }
+                    //금형명 표기
+                    setControlText(menu_mold, moldName);
+                }
+                
+                
+            }
+            else
+            {
+                LogWriter.WriteLog_Error(tcpResponse.Exception);
+            }
+           
+        }
+
+        private void DisplayMachineState(TcpResponse tcpResponse)
+        {
+            string mode = string.Empty;
+
+            if (tcpResponse.Exception == null)
+            {
+                MachineResponseData responseData = tcpResponse.MachineResponses[0];
+                if (responseData.Message.Length > 0)
+                {
+                    //사출기 문제발생
+                }
+                else if(responseData.IsConnected == false)
+                {
+                    if ( commonVar.whichLang == "English" )
+                        mode = "No Response";
+                    else
+                        mode = "연결안됨";
+                    setControlText(menu_mode, mode, (Image)(Properties.Resources.lostConnection));
+                } 
+                else
+                {
+                    Dictionary<string, string> machineState = responseData.MachineData;
+                    
+
+                    if ( machineState["A00007"].Equals("1"))
+                    {
+                        //경보 on
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Alarm";
+                        else
+                            mode = "경보";
+                        setControlText(menu_alert, mode, (Image)(Properties.Resources.AlarmOn));
+                    }
+                    else 
+                    {
+                        //경보 off
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Alarm";
+                        else
+                            mode = "경보";
+                        setControlText(menu_alert, mode, (Image)(Properties.Resources.AlarmOff));
+                    }
+
+                    if (machineState["A00001"].Equals("1"))
+                    {
+                        //저속개폐
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Mold setup";
+                        else
+                            mode = "저속개폐";
+                        setControlText(menu_mode, mode, (Image)(Properties.Resources.MoldsetupModeOn));
+                    }
+                    else if (machineState["A00002"].Equals("1"))
+                    {
+                        //수동운전
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Manual";
+                        else
+                            mode = "수동";
+                        setControlText(menu_mode, mode, (Image)(Properties.Resources.ManualModeOn));
+                    }
+                    else if (machineState["A00003"].Equals("1"))
+                    {
+                        //semi auto
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Semi Auto";
+                        else
+                            mode = "반자동";
+                        setControlText(menu_mode, mode, (Image)(Properties.Resources.SemiautoModeOn));
+                    }
+                    else if (machineState["A00004"].Equals("1"))
+                    {
+                        //full auto
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Full Auto";
+                        else
+                            mode = "자동";
+                        setControlText(menu_mode, mode, (Image)(Properties.Resources.FullautoModeOn));
+                    }
+
+                    if (machineState["A00005"].Equals("1"))
+                    {
+                        //1사이클 완료
+                        //flash 혹은 다른 방법
+                    }
+
+                    if ( machineState["A00008"].Equals("1"))
+                    {
+                        //히터 on
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Heater";
+                        else
+                            mode = "히터";
+                        setControlText(menu_heater, mode, (Image)(Properties.Resources.HeaterOn));
+                    }
+                    else 
+                    {
+                        //히터 off
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Heater";
+                        else
+                            mode = "히터";
+                        setControlText(menu_heater, mode, (Image)(Properties.Resources.HeaterOff));
+                    }
+
+
+                    if ( machineState["A00009"].Equals("1"))
+                    {
+                        //모터 on
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Motor";
+                        else
+                            mode = "모터";
+                        setControlText(menu_motor, mode, (Image)(Properties.Resources.MotorOn));
+                    }
+                    else 
+                    {
+                        //모터 off
+                        if ( commonVar.whichLang == "English" )
+                            mode = "Motor";
+                        else
+                            mode = "모터";
+                        setControlText(menu_motor, mode, (Image)(Properties.Resources.MotorOff));
+                    }
+                }
+            }
+            else
+            {
+                if ( commonVar.whichLang == "English" )
+                    mode = "No Response";
+                else
+                    mode = "연결안됨";
+                setControlText(menu_mode, mode, (Image)(Properties.Resources.lostConnection));
+                LogWriter.WriteLog_Error(tcpResponse.Exception);
+            }
+        }
+
+        private delegate void controlTextSetter(Control control, string text = "", Image image = null);
+        private void setControlText(Control control, string text = "", Image image = null)
+        {
+            try
+            {
+                if ( control.InvokeRequired )
+                {
+                    controlTextSetter callback = new controlTextSetter(setControlText);
+                    control.Invoke(callback, new object[] { control, text, image });
+                }
+                else
+                {
+                    control.BackgroundImage = image;
+                    control.Text = text;
+                }
+            }
+            catch { }
+        }
+
+  
+
+
+
+
+    }//class
+}//namespace

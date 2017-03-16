@@ -1,0 +1,4 @@
+﻿10070293 : Message: 인덱스가 배열 범위를 벗어났습니다.
+StackTrace:    위치: DONGSHIN.frm_worker_main.loadMachineStates()
+   위치: DONGSHIN.frm_worker_main.stateUpdateTimer_Tick(Object sender, EventArgs e)
+

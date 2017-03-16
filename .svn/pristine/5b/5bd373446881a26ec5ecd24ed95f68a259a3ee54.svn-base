@@ -1,0 +1,80 @@
+﻿151920487 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+151921656 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152108820 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152109680 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152150363 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152151633 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152306523 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152307142 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+15251490 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152515710 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152624373 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152625166 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152737331 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+152738825 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153105697 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153106348 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153121271 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153121670 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153721360 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+
+153722670 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32[] machineIds, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcpBeta\MethodMain.cs:줄 331
+   위치: DONGSHIN.frm_worker_home.setData(Dictionary`2 data1, String[] fieldNames1) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 414
+

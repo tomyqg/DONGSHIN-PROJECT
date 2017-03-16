@@ -1,0 +1,12 @@
+﻿093717494 : Message: 기본 연결이 닫혔습니다. SSL/TLS 보안 채널에 대한 트러스트 관계를 설정할 수 없습니다.
+StackTrace:    위치: System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   위치: System.Net.WebClient.DownloadString(Uri address)
+   위치: System.Net.WebClient.DownloadString(String address)
+   위치: ModbusTcp.MethodMain.LoadDefaultSettings(String companyCode)
+   위치: DONGSHIN.frm_worker_home..ctor()
+
+093719849 : Message: 값은 null일 수 없습니다.
+매개 변수 이름: remoteEP
+StackTrace:    위치: ModbusTcp.MethodMain.RequestValueFromClientSide(Int32 machineId, String[] fieldCodes)
+   위치: DONGSHIN.frm_worker_home.drop_clamp_Click(Object sender, EventArgs e)
+

@@ -1,0 +1,155 @@
+﻿094448101 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094449539 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094451523 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094453539 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094455531 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094457539 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094459539 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094501545 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094503537 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+094505538 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+15510024 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155101555 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155103552 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155105547 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155107557 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155109549 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155111552 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155113542 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155115544 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155117558 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155119554 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137139 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137153 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137414 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137429 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137433 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155137434 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155139370 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155139388 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155139392 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+
+155139400 : Message: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 129
+

@@ -1,0 +1,64 @@
+﻿17495753 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+174958137 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+174959238 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 428
+
+175000340 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175000355 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175002690 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175002690 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175015238 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+175016340 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.getData(String machineCode, String[] fieldCodes) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 307
+
+175017456 : Message: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+StackTrace:    위치: ModbusTcp.MethodMain.getMoldNameFromClientSide(String machineCode) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\MethodMain.cs:줄 487
+   위치: DONGSHIN.frm_worker_home.displayMachineState() 파일 d:\Visual Studio 2012\Projects\DONGSHIN\DONGSHIN\frm_worker_home.cs:줄 428
+
+175018541 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175018572 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175021704 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+
+175026703 : Message: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 125.135.148.140:6002
+StackTrace:    위치: System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   위치: System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   위치: ModbusTcp.PcTcpClient.ThreadWorkFromClient(Object obj) 파일 d:\Visual Studio 2012\Projects\DONGSHIN\ModbusTcp\PcTcpClient.cs:줄 130
+

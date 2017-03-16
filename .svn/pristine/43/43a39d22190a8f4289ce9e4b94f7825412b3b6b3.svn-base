@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<FileInfo>DONGSHIN.zip</FileInfo>
+
+  <AppInfo>
+    <application_name>DONGSHIN.exe</application_name>
+    <version>1.00.0137</version>
+    <update_time>2017-03-07</update_time>
+  </AppInfo>
+
+  <ServerInfo>
+    <addr>eJuFGGGDd45r2J+WrPhf7X6dQBNOMvI8fJ4zsFT5A1sgb9IS+VPooVMi+ACexVuZmpZzfscmeLQ5ICyNjxbA5Aeswo3cz1/G5g1j5iScFDOpFEcOu6Plyy/wqbxJBPJ2</addr>
+  </ServerInfo>
+  
+</Config>

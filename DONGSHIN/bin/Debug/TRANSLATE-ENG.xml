@@ -1,0 +1,2748 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<controls>
+  <control>
+    <kor>(로보트)신호로 자동 재시작</kor>
+    <eng>Auto Recycle from Robot</eng>
+  </control>
+  <control>
+    <kor>Conper</kor>
+    <eng>Conper</eng>
+  </control>
+  <control>
+    <kor>PWM</kor>
+    <eng>PWM</eng>
+  </control>
+  <control>
+    <kor>Ramp</kor>
+    <eng>Ramp</eng>
+  </control>
+  <control>
+    <kor>V-&gt;P 절환 속도</kor>
+    <eng>V-&gt;P Speed</eng>
+  </control>
+  <control>
+    <kor>V-&gt;P 절환 압력</kor>
+    <eng>V-&gt;P Pressure</eng>
+  </control>
+  <control>
+    <kor>V-&gt;P 절환 위치</kor>
+    <eng>V-&gt;P Position</eng>
+  </control>
+  <control>
+    <kor>가스사출스타트</kor>
+    <eng>Start Gas Injection</eng>
+  </control>
+  <control>
+    <kor>감속</kor>
+    <eng>MC2</eng>
+  </control>
+  <control>
+    <kor>감속</kor>
+    <eng>MO2</eng>
+  </control>
+  <control>
+    <kor>경보리스트</kor>
+    <eng>Alarm</eng>
+  </control>
+  <control>
+    <kor>계량 R.P.M</kor>
+    <eng>Dosing R.P.M</eng>
+  </control>
+  <control>
+    <kor>계량 감시 시간</kor>
+    <eng>Dosing Time-out</eng>
+  </control>
+  <control>
+    <kor>계량 전</kor>
+    <eng>Before Dosing</eng>
+  </control>
+  <control>
+    <kor>계량 파라미터</kor>
+    <eng>Dosing Parameter</eng>
+  </control>
+  <control>
+    <kor>계량 후</kor>
+    <eng>After Dosing</eng>
+  </control>
+  <control>
+    <kor>계량1</kor>
+    <eng>Dos.1</eng>
+  </control>
+  <control>
+    <kor>계량2</kor>
+    <eng>Dos.2</eng>
+  </control>
+  <control>
+    <kor>계량3</kor>
+    <eng>Dos.3</eng>
+  </control>
+  <control>
+    <kor>계량 감시 시간</kor>
+    <eng>Dosing Time out</eng>
+  </control>
+  <control>
+    <kor>계량시간</kor>
+    <eng>Dosing Time</eng>
+  </control>
+  <control>
+    <kor>계량시간</kor>
+    <eng>Dosing Time</eng>
+  </control>
+  <control>
+    <kor>계량전사출압력</kor>
+    <eng>Injection pressure before dosing</eng>
+  </control>
+  <control>
+    <kor>계량 지연 시간</kor>
+    <eng>Dosing Delay Time</eng>
+  </control>
+  <control>
+    <kor>계량후사출압력</kor>
+    <eng>Injection pressure after dosing</eng>
+  </control>
+  <control>
+    <kor>계량후위치</kor>
+    <eng>Dosing end Position</eng>
+  </control>
+  <control>
+    <kor>고속</kor>
+    <eng>MC1</eng>
+  </control>
+  <control>
+    <kor>고속</kor>
+    <eng>MO3</eng>
+  </control>
+  <control>
+    <kor>고압1</kor>
+    <eng>MC5</eng>
+  </control>
+  <control>
+    <kor>고압모니터</kor>
+    <eng>High Pressure Monitor</eng>
+  </control>
+  <control>
+    <kor>고정</kor>
+    <eng>Fix.</eng>
+  </control>
+  <control>
+    <kor>공정감시시간</kor>
+    <eng>Cycle time out</eng>
+  </control>
+  <control>
+    <kor>공정시간</kor>
+    <eng>Cycle Time</eng>
+  </control>
+  <control>
+    <kor>그리스 공급시 시간</kor>
+    <eng>Set Timer On Cycles Grease Lubrication</eng>
+  </control>
+  <control>
+    <kor>그리스 공급시 휴지시간</kor>
+    <eng>Set Timer Off Cycles Grease Lubriacation</eng>
+  </control>
+  <control>
+    <kor>그리스 공급횟수</kor>
+    <eng>Set Cycles Grease Lubrication</eng>
+  </control>
+  <control>
+    <kor>그리스 저압 감시 시간</kor>
+    <eng>Set Time-out Grease Lubrication Low level</eng>
+  </control>
+  <control>
+    <kor>그리스 최소 타이머</kor>
+    <eng>Set minimum time Grease Lubrication</eng>
+  </control>
+  <control>
+    <kor>금형 실제 위치</kor>
+    <eng>Mold Actual Position</eng>
+  </control>
+  <control>
+    <kor>금형보호</kor>
+    <eng>Mold protection</eng>
+  </control>
+  <control>
+    <kor>금형 보호 감시시간</kor>
+    <eng>Mold Protection Time out</eng>
+  </control>
+  <control>
+    <kor>금형보호 발생시 형개</kor>
+    <eng>Enable Opening after mold protection</eng>
+  </control>
+  <control>
+    <kor>금형 보호 시간</kor>
+    <eng>Mold Protection Time out</eng>
+  </control>
+  <control>
+    <kor>금형보호 토크</kor>
+    <eng>Mold protection Torque</eng>
+  </control>
+  <control>
+    <kor>금형보호1</kor>
+    <eng>MC3</eng>
+  </control>
+  <control>
+    <kor>금형보호2</kor>
+    <eng>MC4</eng>
+  </control>
+  <control>
+    <kor>금형보호 시간</kor>
+    <eng>Mold protection Time</eng>
+  </control>
+  <control>
+    <kor>금형보호 위치</kor>
+    <eng>Mold protection position</eng>
+  </control>
+  <control>
+    <kor>금형 위치</kor>
+    <eng>Mold Position</eng>
+  </control>
+  <control>
+    <kor>기계 공정 횟수</kor>
+    <eng>Set Machine Cycles for Grease Lubrication</eng>
+  </control>
+  <control>
+    <kor>기계공정시간</kor>
+    <eng>Machine Cycle Time</eng>
+  </control>
+  <control>
+    <kor>기능 및 실제값</kor>
+    <eng>Function &amp; Actual Value</eng>
+  </control>
+  <control>
+    <kor>기본사출압력</kor>
+    <eng>basic Injection pressure</eng>
+  </control>
+  <control>
+    <kor>날짜</kor>
+    <eng>Date</eng>
+  </control>
+  <control>
+    <kor>냉각 시간</kor>
+    <eng>Cooling time</eng>
+  </control>
+  <control>
+    <kor>노즐</kor>
+    <eng>Nozzle</eng>
+  </control>
+  <control>
+    <kor>노즐동기승온</kor>
+    <eng>Noz.Heat Dly</eng>
+  </control>
+  <control>
+    <kor>노즐온도</kor>
+    <eng>Temperature nozzle</eng>
+  </control>
+  <control>
+    <kor>단락경보시간</kor>
+    <eng>shorted sensor alarm threshold</eng>
+  </control>
+  <control>
+    <kor>단선</kor>
+    <eng>HBO</eng>
+  </control>
+  <control>
+    <kor>대기모드온도</kor>
+    <eng>Set point temperature stand-by 'H'</eng>
+  </control>
+  <control>
+    <kor>동작위치</kor>
+    <eng>Run Position</eng>
+  </control>
+  <control>
+    <kor>로보트 회로</kor>
+    <eng>Robot Connection</eng>
+  </control>
+  <control>
+    <kor>모니터링</kor>
+    <eng>Monitoring</eng>
+  </control>
+  <control>
+    <kor>무인 운전 전환</kor>
+    <eng>Unmand Slection</eng>
+  </control>
+  <control>
+    <kor>반자동 공정 후 안전도어 열림</kor>
+    <eng>Open fornt door at end semiautomatic cycle</eng>
+  </control>
+  <control>
+    <kor>발진 이젝터</kor>
+    <eng>Oscillation</eng>
+  </control>
+  <control>
+    <kor>발진이젝터 / 후진완료위치</kor>
+    <eng>Oscillation / BW. END Pos.</eng>
+  </control>
+  <control>
+    <kor>배압</kor>
+    <eng>Back Pressure</eng>
+  </control>
+  <control>
+    <kor>배압완료압력</kor>
+    <eng>Back Pressure End Pressure</eng>
+  </control>
+  <control>
+    <kor>보압1</kor>
+    <eng>Hdpr.1</eng>
+  </control>
+  <control>
+    <kor>보압2</kor>
+    <eng>Hdpr.2</eng>
+  </control>
+  <control>
+    <kor>보압3</kor>
+    <eng>Hdpr.3</eng>
+  </control>
+  <control>
+    <kor>보압시간</kor>
+    <eng>Holding pressure time</eng>
+  </control>
+  <control>
+    <kor>보압시작속도</kor>
+    <eng>Injection speed start holding</eng>
+  </control>
+  <control>
+    <kor>보압시작압력</kor>
+    <eng>Injection pressure start holding</eng>
+  </control>
+  <control>
+    <kor>보압시작위치</kor>
+    <eng>injection position start holding</eng>
+  </control>
+  <control>
+    <kor>보압전환</kor>
+    <eng>Inj. Switch-over</eng>
+  </control>
+  <control>
+    <kor>보압전환 시간사출</kor>
+    <eng>Enable Holding Injection Set Time-Injection</eng>
+  </control>
+  <control>
+    <kor>보압전환 압력</kor>
+    <eng>Enable Holding Injection Set Pressure</eng>
+  </control>
+  <control>
+    <kor>보압전환 위치</kor>
+    <eng>Enable Holding Injection Set Position</eng>
+  </control>
+  <control>
+    <kor>보압전환 속도</kor>
+    <eng>Hold pressure switch-over Speed</eng>
+  </control>
+  <control>
+    <kor>보온</kor>
+    <eng>Warm</eng>
+  </control>
+  <control>
+    <kor>부분 전진 속도</kor>
+    <eng>Partially Forward Speed</eng>
+  </control>
+  <control>
+    <kor>부분 전진 위치</kor>
+    <eng>Partially Forward Position</eng>
+  </control>
+  <control>
+    <kor>부분 후진 속도</kor>
+    <eng>Partially Backward Speed</eng>
+  </control>
+  <control>
+    <kor>부분 후진 위치</kor>
+    <eng>Partially Backward Position</eng>
+  </control>
+  <control>
+    <kor>불량품</kor>
+    <eng>Bad Product</eng>
+  </control>
+  <control>
+    <kor>사출</kor>
+    <eng>Injection</eng>
+  </control>
+  <control>
+    <kor>사출 감시 시간</kor>
+    <eng>Injection Time-out</eng>
+  </control>
+  <control>
+    <kor>사출 파라미터</kor>
+    <eng>Injection Parameter</eng>
+  </control>
+  <control>
+    <kor>사출1</kor>
+    <eng>Inj.1</eng>
+  </control>
+  <control>
+    <kor>사출2</kor>
+    <eng>Inj.2</eng>
+  </control>
+  <control>
+    <kor>사출3</kor>
+    <eng>Inj.3</eng>
+  </control>
+  <control>
+    <kor>사출4</kor>
+    <eng>Inj.4</eng>
+  </control>
+  <control>
+    <kor>사출5</kor>
+    <eng>Inj.5</eng>
+  </control>
+  <control>
+    <kor>사출감시시간</kor>
+    <eng>Injection time out</eng>
+  </control>
+  <control>
+    <kor>사출대 전진 감시 시간</kor>
+    <eng>Injection Unit Forward Time-out</eng>
+  </control>
+  <control>
+    <kor>사출대 파라미터</kor>
+    <eng>Injection Unit Parameter</eng>
+  </control>
+  <control>
+    <kor>사출대 후진 감시 시간</kor>
+    <eng>Injection Unit Backward Time-out</eng>
+  </control>
+  <control>
+    <kor>사출대 후진 시간</kor>
+    <eng>Injection Unit Backward Time</eng>
+  </control>
+  <control>
+    <kor>사출대 후진 지연 시간</kor>
+    <eng>Injection Unit Backward Delay Time</eng>
+  </control>
+  <control>
+    <kor>사출시간</kor>
+    <eng>Injection Time</eng>
+  </control>
+  <control>
+    <kor>사출 압력</kor>
+    <eng>Injection Pressure</eng>
+  </control>
+  <control>
+    <kor>사출 지연 시간</kor>
+    <eng>Injection Delay time</eng>
+  </control>
+  <control>
+    <kor>사출최고압력</kor>
+    <eng>Max injection speed</eng>
+  </control>
+  <control>
+    <kor>사출토크</kor>
+    <eng>Injection Torque</eng>
+  </control>
+  <control>
+    <kor>상한</kor>
+    <eng>Hi_s</eng>
+  </control>
+  <control>
+    <kor>생산공정시간</kor>
+    <eng>Production Time</eng>
+  </control>
+  <control>
+    <kor>생산율</kor>
+    <eng>Production rate</eng>
+  </control>
+  <control>
+    <kor>석백 감시 시간</kor>
+    <eng>Suckback Time-out</eng>
+  </control>
+  <control>
+    <kor>석백 파라미터</kor>
+    <eng>Suckback Parameter</eng>
+  </control>
+  <control>
+    <kor>석백1</kor>
+    <eng>prepull</eng>
+  </control>
+  <control>
+    <kor>석백2</kor>
+    <eng>postpull</eng>
+  </control>
+  <control>
+    <kor>석백완료 후 사출압력</kor>
+    <eng>Injection pressure after end suckback</eng>
+  </control>
+  <control>
+    <kor>설정</kor>
+    <eng>Setting</eng>
+  </control>
+  <control>
+    <kor>설정온도</kor>
+    <eng>Set Temperature</eng>
+  </control>
+  <control>
+    <kor>속도</kor>
+    <eng>Speed</eng>
+  </control>
+  <control>
+    <kor>속도출력전압</kor>
+    <eng>Speed Output Voltage</eng>
+  </control>
+  <control>
+    <kor>수지투입구</kor>
+    <eng>Resin gate</eng>
+  </control>
+  <control>
+    <kor>수집투입구온도</kor>
+    <eng>Resin gate temperature</eng>
+  </control>
+  <control>
+    <kor>스크류냉간기동</kor>
+    <eng>Screw Prevent</eng>
+  </control>
+  <control>
+    <kor>스크류 위치</kor>
+    <eng>Screw position</eng>
+  </control>
+  <control>
+    <kor>시간</kor>
+    <eng>Time</eng>
+  </control>
+  <control>
+    <kor>실제금형보호시간</kor>
+    <eng>Actul Mold protection time</eng>
+  </control>
+  <control>
+    <kor>실제시간</kor>
+    <eng>Actual Time</eng>
+  </control>
+  <control>
+    <kor>실제온도</kor>
+    <eng>Actul Temperature</eng>
+  </control>
+  <control>
+    <kor>안전도어 원 터치 열림</kor>
+    <eng>Door one touch open</eng>
+  </control>
+  <control>
+    <kor>압력</kor>
+    <eng>Pressure</eng>
+  </control>
+  <control>
+    <kor>압력출력전압</kor>
+    <eng>Pressure Output Voltage</eng>
+  </control>
+  <control>
+    <kor>양품</kor>
+    <eng>Good Product</eng>
+  </control>
+  <control>
+    <kor>에어브라스트 파라미터</kor>
+    <eng>Air blast parameter</eng>
+  </control>
+  <control>
+    <kor>역회전</kor>
+    <eng>Left Rotate</eng>
+  </control>
+  <control>
+    <kor>역회전 동작모드</kor>
+    <eng>Left Rotate Run mode</eng>
+  </control>
+  <control>
+    <kor>역회전 완료모드</kor>
+    <eng>Left Rotate End mode</eng>
+  </control>
+  <control>
+    <kor>온도</kor>
+    <eng>Temperature</eng>
+  </control>
+  <control>
+    <kor>용량증대</kor>
+    <eng>Extrustion</eng>
+  </control>
+  <control>
+    <kor>위치</kor>
+    <eng>Position</eng>
+  </control>
+  <control>
+    <kor>위치 및 압력</kor>
+    <eng>Position &amp; Pressure</eng>
+  </control>
+  <control>
+    <kor>유압안정온도</kor>
+    <eng>A.Hyd Oil S.</eng>
+  </control>
+  <control>
+    <kor>유압코어</kor>
+    <eng>Hyd.Core</eng>
+  </control>
+  <control>
+    <kor>윤활유 공급시 시간</kor>
+    <eng>Set Timer On Cycles Lubricant Lubrication</eng>
+  </control>
+  <control>
+    <kor>윤활유 공급시 휴지시간</kor>
+    <eng>Set Timer Off Cycles Lubricant Lubriacation</eng>
+  </control>
+  <control>
+    <kor>윤활유 공급횟수</kor>
+    <eng>Set Cycles Lubricant Lubrication</eng>
+  </control>
+  <control>
+    <kor>윤활유 저압 감시 시간</kor>
+    <eng>Set Time-out Lubricant Lubrication Low level</eng>
+  </control>
+  <control>
+    <kor>윤활유 최소 타이머</kor>
+    <eng>Set minimum time Lubricant Lubrication</eng>
+  </control>
+  <control>
+    <kor>이동</kor>
+    <eng>Mov.</eng>
+  </control>
+  <control>
+    <kor>이젝터 동작모드</kor>
+    <eng>Ejector Runmode</eng>
+  </control>
+  <control>
+    <kor>이젝터 사용</kor>
+    <eng>Enable Ejector</eng>
+  </control>
+  <control>
+    <kor>이젝터 전진 감시 시간</kor>
+    <eng>Ejector Forward Time-out</eng>
+  </control>
+  <control>
+    <kor>이젝터 전진 지연 시간</kor>
+    <eng>Ejector Forward Delay Time</eng>
+  </control>
+  <control>
+    <kor>이젝터 전진대기</kor>
+    <eng>Ejector FW.Stop</eng>
+  </control>
+  <control>
+    <kor>이젝터 전진완료</kor>
+    <eng>Ejector FW.end</eng>
+  </control>
+  <control>
+    <kor>이젝터 전진 유지</kor>
+    <eng>Stay in Front Function</eng>
+  </control>
+  <control>
+    <kor>이젝터 파라미터</kor>
+    <eng>Ejector Parameter</eng>
+  </control>
+  <control>
+    <kor>이젝터 횟수</kor>
+    <eng>Ejector Counter</eng>
+  </control>
+  <control>
+    <kor>이젝터 횟수</kor>
+    <eng>Ejector count</eng>
+  </control>
+  <control>
+    <kor>이젝터 후진 감시 시간</kor>
+    <eng>Ejector Backward Time-out</eng>
+  </control>
+  <control>
+    <kor>이젝터 후진 지연 시간</kor>
+    <eng>Ejector Backward Delay Time</eng>
+  </control>
+  <control>
+    <kor>이젝터 후퇴확인L/S</kor>
+    <eng>Mold EJ.BW Confirm L/S</eng>
+  </control>
+  <control>
+    <kor>이젝터공정시간</kor>
+    <eng>Ejector cycle time</eng>
+  </control>
+  <control>
+    <kor>이젝터 시간</kor>
+    <eng>Ejection Time</eng>
+  </control>
+  <control>
+    <kor>이젝터 싸이클 지연시간</kor>
+    <eng>Ejector Cycle Delay Time</eng>
+  </control>
+  <control>
+    <kor>이젝터 위치</kor>
+    <eng>Ejector Postion</eng>
+  </control>
+  <control>
+    <kor>이젝터전진완료위치</kor>
+    <eng>Ejector forward end position</eng>
+  </control>
+  <control>
+    <kor>자동대기모드</kor>
+    <eng>Auto change stand-by mode</eng>
+  </control>
+  <control>
+    <kor>자동모드 공정 감시 시간</kor>
+    <eng>Automatic cycle time-out</eng>
+  </control>
+  <control>
+    <kor>자동모드시 안전 도어 제어</kor>
+    <eng>Open/Close Door on Automatic cycle</eng>
+  </control>
+  <control>
+    <kor>자동보온전환</kor>
+    <eng>Auto2nd Temp.</eng>
+  </control>
+  <control>
+    <kor>작동시간</kor>
+    <eng>Run Time</eng>
+  </control>
+  <control>
+    <kor>작동유</kor>
+    <eng>Oil</eng>
+  </control>
+  <control>
+    <kor>작동유 예열 속도</kor>
+    <eng>Oil Pre-Heat Flow.</eng>
+  </control>
+  <control>
+    <kor>작동유 예열 압력</kor>
+    <eng>Oil Pre-Heat Pres.</eng>
+  </control>
+  <control>
+    <kor>저속1</kor>
+    <eng>MO4</eng>
+  </control>
+  <control>
+    <kor>저속2</kor>
+    <eng>MO1</eng>
+  </control>
+  <control>
+    <kor>전</kor>
+    <eng>Before</eng>
+  </control>
+  <control>
+    <kor>전원공급시간</kor>
+    <eng>Power On Time</eng>
+  </control>
+  <control>
+    <kor>전진</kor>
+    <eng>Forward</eng>
+  </control>
+  <control>
+    <kor>전진1차</kor>
+    <eng>FW.1st</eng>
+  </control>
+  <control>
+    <kor>전진완료</kor>
+    <eng>FW.end</eng>
+  </control>
+  <control>
+    <kor>정회전</kor>
+    <eng>Right Rotate</eng>
+  </control>
+  <control>
+    <kor>정회전 동작모드</kor>
+    <eng>Right Rotate Run mode</eng>
+  </control>
+  <control>
+    <kor>정회전 완료모드</kor>
+    <eng>Right Rotate End mode</eng>
+  </control>
+  <control>
+    <kor>제품수</kor>
+    <eng>Product count</eng>
+  </control>
+  <control>
+    <kor>지연시간</kor>
+    <eng>Delay time</eng>
+  </control>
+  <control>
+    <kor>총 성형 횟수</kor>
+    <eng>Total Shot Count</eng>
+  </control>
+  <control>
+    <kor>총공정시간</kor>
+    <eng>Total cycle time</eng>
+  </control>
+  <control>
+    <kor>최대</kor>
+    <eng>Max.</eng>
+  </control>
+  <control>
+    <kor>최대계량속도</kor>
+    <eng>Max dosing speed</eng>
+  </control>
+  <control>
+    <kor>최대배압계량</kor>
+    <eng>Max dosing back-pressure</eng>
+  </control>
+  <control>
+    <kor>최대보압위치</kor>
+    <eng>Injection holding max position</eng>
+  </control>
+  <control>
+    <kor>최대사출속도</kor>
+    <eng>Max Injection speed</eng>
+  </control>
+  <control>
+    <kor>최대사출속도</kor>
+    <eng>Max. Injection speed</eng>
+  </control>
+  <control>
+    <kor>최대사출압력</kor>
+    <eng>Min. Injection Pressure</eng>
+  </control>
+  <control>
+    <kor>최소</kor>
+    <eng>Min.</eng>
+  </control>
+  <control>
+    <kor>최소보압위치</kor>
+    <eng>Injection holding min position</eng>
+  </control>
+  <control>
+    <kor>충진시간</kor>
+    <eng>Dosing Time</eng>
+  </control>
+  <control>
+    <kor>카운터</kor>
+    <eng>Counter</eng>
+  </control>
+  <control>
+    <kor>코어 1-2-3-4</kor>
+    <eng>Core 1-2-3-4</eng>
+  </control>
+  <control>
+    <kor>쿠션</kor>
+    <eng>cushion</eng>
+  </control>
+  <control>
+    <kor>쿠션/상한</kor>
+    <eng>cushion/high</eng>
+  </control>
+  <control>
+    <kor>쿠션/하한</kor>
+    <eng>cushion/low</eng>
+  </control>
+  <control>
+    <kor>쿠션 위치</kor>
+    <eng>Cushion position</eng>
+  </control>
+  <control>
+    <kor>크로스헤드 실제 위치</kor>
+    <eng>Crosshead Actual position</eng>
+  </control>
+  <control>
+    <kor>크로스헤드 위치</kor>
+    <eng>Crosshead Position</eng>
+  </control>
+  <control>
+    <kor>토글 그리스 공급시 휴지시간</kor>
+    <eng>Set Timer Off Cycles Toggle Lubrication</eng>
+  </control>
+  <control>
+    <kor>토글 그리스 공급횟수</kor>
+    <eng>Set Cycles Toggle Lubriacation</eng>
+  </control>
+  <control>
+    <kor>토글 그리스 저압 감시시간</kor>
+    <eng>Set Time-out Toggle Lubrication low level</eng>
+  </control>
+  <control>
+    <kor>펌프가동시간</kor>
+    <eng>Pump Run Time</eng>
+  </control>
+  <control>
+    <kor>평균배압압력</kor>
+    <eng>Average Back Pressure</eng>
+  </control>
+  <control>
+    <kor>평균보압압력</kor>
+    <eng>Average Holding Pressure</eng>
+  </control>
+  <control>
+    <kor>평균사출압력</kor>
+    <eng>Average Injection Pressure</eng>
+  </control>
+  <control>
+    <kor>평균충압압력</kor>
+    <eng>Average Dosing Pressure</eng>
+  </control>
+  <control>
+    <kor>포토셀</kor>
+    <eng>Photocell</eng>
+  </control>
+  <control>
+    <kor>프리 이젝터</kor>
+    <eng>Partially Forward Ejector</eng>
+  </control>
+  <control>
+    <kor>하한</kor>
+    <eng>Lo_s</eng>
+  </control>
+  <control>
+    <kor>한 싸이클당 펄스 횟수</kor>
+    <eng>Set Count at one Cycle Toggle Lubrication</eng>
+  </control>
+  <control>
+    <kor>현</kor>
+    <eng>After</eng>
+  </control>
+  <control>
+    <kor>형개</kor>
+    <eng>Mold Opening</eng>
+  </control>
+  <control>
+    <kor>형개 중 로보트 사용</kor>
+    <eng>Enable robot during opening</eng>
+  </control>
+  <control>
+    <kor>형개 중 로봇위치</kor>
+    <eng>Opening/Robot</eng>
+  </control>
+  <control>
+    <kor>형개 중 이젝터 / 시작위치</kor>
+    <eng>EJ.On Fly / Start Pos.</eng>
+  </control>
+  <control>
+    <kor>형개 중 이젝터 (시간)</kor>
+    <eng>Set Ejector on clamp opening time</eng>
+  </control>
+  <control>
+    <kor>형개 중 이젝터 (위치)</kor>
+    <eng>Set Ejector on Clamp Opening Position</eng>
+  </control>
+  <control>
+    <kor>형개시간</kor>
+    <eng>Mold Opening Time</eng>
+  </control>
+  <control>
+    <kor>형개완료 모니터시간</kor>
+    <eng>MD_Open Monitor</eng>
+  </control>
+  <control>
+    <kor>형개완료위치</kor>
+    <eng>Mold opened end position</eng>
+  </control>
+  <control>
+    <kor>형개 토크</kor>
+    <eng>Mold Oepning Torque</eng>
+  </control>
+  <control>
+    <kor>형개폐 동작모드</kor>
+    <eng>Mold Open/Close Runmode</eng>
+  </control>
+  <control>
+    <kor>형개폐 파라미터</kor>
+    <eng>Clamp parameter</eng>
+  </control>
+  <control>
+    <kor>형체고압(GB/RB)</kor>
+    <eng>Clamp High Torque</eng>
+  </control>
+  <control>
+    <kor>형체고압(MC)</kor>
+    <eng>Clamp High Pressure</eng>
+  </control>
+  <control>
+    <kor>형체력</kor>
+    <eng>Tonnage</eng>
+  </control>
+  <control>
+    <kor>형체시간</kor>
+    <eng>Mold Closing Time</eng>
+  </control>
+  <control>
+    <kor>형폐</kor>
+    <eng>Mold Closing</eng>
+  </control>
+  <control>
+    <kor>형폐 중 이젝터 후진</kor>
+    <eng>Closing/Ejector BW.</eng>
+  </control>
+  <control>
+    <kor>형폐시간</kor>
+    <eng>Mold Closing Time</eng>
+  </control>
+  <control>
+    <kor>형폐 토크</kor>
+    <eng>Mold Closing Torque</eng>
+  </control>
+  <control>
+    <kor>회전코어</kor>
+    <eng>Unscrew core</eng>
+  </control>
+  <control>
+    <kor>횟수</kor>
+    <eng>Count</eng>
+  </control>
+  <control>
+    <kor>후진</kor>
+    <eng>Backward</eng>
+  </control>
+  <control>
+    <kor>후진1차</kor>
+    <eng>BW.1st</eng>
+  </control>
+  <control>
+    <kor>후진완료</kor>
+    <eng>BW.End</eng>
+  </control>
+  <control>
+    <kor>휴지 시간</kor>
+    <eng>Recycle time</eng>
+  </control>
+  <control>
+    <kor>히터1</kor>
+    <eng>H1</eng>
+  </control>
+  <control>
+    <kor>히터10</kor>
+    <eng>H10</eng>
+  </control>
+  <control>
+    <kor>히터11</kor>
+    <eng>H11</eng>
+  </control>
+  <control>
+    <kor>히터12</kor>
+    <eng>H12</eng>
+  </control>
+  <control>
+    <kor>히터13</kor>
+    <eng>H13</eng>
+  </control>
+  <control>
+    <kor>히터14</kor>
+    <eng>H14</eng>
+  </control>
+  <control>
+    <kor>히터15</kor>
+    <eng>H15</eng>
+  </control>
+  <control>
+    <kor>히터2</kor>
+    <eng>H2</eng>
+  </control>
+  <control>
+    <kor>히터3</kor>
+    <eng>H3</eng>
+  </control>
+  <control>
+    <kor>히터4</kor>
+    <eng>H4</eng>
+  </control>
+  <control>
+    <kor>히터5</kor>
+    <eng>H5</eng>
+  </control>
+  <control>
+    <kor>히터6</kor>
+    <eng>H6</eng>
+  </control>
+  <control>
+    <kor>히터7</kor>
+    <eng>H7</eng>
+  </control>
+  <control>
+    <kor>히터8</kor>
+    <eng>H8</eng>
+  </control>
+  <control>
+    <kor>히터9</kor>
+    <eng>H9</eng>
+  </control>
+  <control>
+    <kor>히터모드</kor>
+    <eng>Heat.mode</eng>
+  </control>
+  <control>
+    <kor>히터모드1</kor>
+    <eng>Heat.mode1</eng>
+  </control>
+  <control>
+    <kor>히터모드2</kor>
+    <eng>Heat.mode2</eng>
+  </control>
+  <control>
+    <kor>히터작업상태</kor>
+    <eng>Heat.Mode</eng>
+  </control>
+  <control>
+    <kor>회전코어 / 정회전</kor>
+    <eng>Unscrew core / Right Rotate</eng>
+  </control>
+  <control>
+    <kor>회전코어 / 역회전</kor>
+    <eng>Unscrew core / Left Rotate</eng>
+  </control>
+  <control>
+    <kor>형체고압</kor>
+    <eng>Clamp High Torque</eng>
+  </control>
+  <control>
+    <kor>형개폐&amp;이젝터</kor>
+    <eng>MO/MC&amp;Eje.</eng>
+  </control>
+  <control>
+    <kor>사출&amp;계량</kor>
+    <eng>Inj.&amp;Dos.</eng>
+  </control>
+  <control>
+    <kor>온도</kor>
+    <eng>Temp.</eng>
+  </control>
+  <control>
+    <kor>코어</kor>
+    <eng>Core</eng>
+  </control>
+  <control>
+    <kor>기능&amp;모니터링</kor>
+    <eng>Monitoring</eng>
+  </control>
+  <control>
+    <kor>사출조건성형표</kor>
+    <eng>Inj. Condition</eng>
+  </control>
+  <control>
+    <kor>기종</kor>
+    <eng>Type</eng>
+  </control>
+  <control>
+    <kor>호기</kor>
+    <eng>Machine No.</eng>
+  </control>
+  <control>
+    <kor>금형이름</kor>
+    <eng>Mold Name</eng>
+  </control>
+  <control>
+    <kor>경보</kor>
+    <eng>Alarm</eng>
+  </control>
+  <control>
+    <kor>모터</kor>
+    <eng>Motor</eng>
+  </control>
+  <control>
+    <kor>히터</kor>
+    <eng>Heater</eng>
+  </control>
+  <control>
+    <kor>운전모드</kor>
+    <eng>Run Mode</eng>
+  </control>
+  <control>
+    <kor>모드전환</kor>
+    <eng>Switch Mode</eng>
+  </control>
+  <control>
+    <kor>사원번호</kor>
+    <eng>Employee ID</eng>
+  </control>
+  <control>
+    <kor>비밀번호</kor>
+    <eng>Password</eng>
+  </control>
+  <control>
+    <kor>확인</kor>
+    <eng>OK</eng>
+  </control>
+  <control>
+    <kor>닫기</kor>
+    <eng>Close</eng>
+  </control>
+  <control>
+    <kor>자동모드</kor>
+    <eng>Full Auto</eng>
+  </control>
+  <control>
+    <kor>저속개폐</kor>
+    <eng>Mold Setup</eng>
+  </control>
+  <control>
+    <kor>수동모드</kor>
+    <eng>Manual</eng>
+  </control>
+  <control>
+    <kor>반자동모드</kor>
+    <eng>Semi Auto</eng>
+  </control>
+  <control>
+    <kor>저장</kor>
+    <eng>Save</eng>
+  </control>
+  <control>
+    <kor>이름</kor>
+    <eng>Name</eng>
+  </control>
+  <control>
+    <kor>상태</kor>
+    <eng>State</eng>
+  </control>
+  <control>
+    <kor>메세지</kor>
+    <eng>Message</eng>
+  </control>
+  <control>
+    <kor>품명</kor>
+    <eng>Product Name</eng>
+  </control>
+  <control>
+    <kor>목표수량</kor>
+    <eng>Planned (EA)</eng>
+  </control>
+  <control>
+    <kor>생산수량</kor>
+    <eng>Actual (EA)</eng>
+  </control>
+  <control>
+    <kor>불량수량</kor>
+    <eng>Defective (EA)</eng>
+  </control>
+  <control>
+    <kor>달성률</kor>
+    <eng>Fulfillment (%)</eng>
+  </control>
+  <control>
+    <kor>불량률</kor>
+    <eng>Reject (%)</eng>
+  </control>
+  <control>
+    <kor>메모리맵 설정</kor>
+    <eng>Memorymap Setting</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 추가</kor>
+    <eng>Add memorymap base</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 일괄 추가</kor>
+    <eng>Add by Excel</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 수정</kor>
+    <eng>Update memorymap base</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 단일 삭제</kor>
+    <eng>Delete single base record</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 전체 삭제</kor>
+    <eng>Delete all</eng>
+  </control>
+  <control>
+    <kor>맵타입 및 설비별 메모리맵</kor>
+    <eng>Maptype / Machine Map</eng>
+  </control>
+  <control>
+    <kor>◀ 맵타입 추가</kor>
+    <eng>◀ Add maptype</eng>
+  </control>
+  <control>
+    <kor>◀ 맵타입 수정</kor>
+    <eng>◀ Update maptype</eng>
+  </control>
+  <control>
+    <kor>◀ 맵타입 삭제</kor>
+    <eng>◀ Delete maptype</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 추가 ▶</kor>
+    <eng>Add machine map ▶</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 일괄 추가 ▶</kor>
+    <eng>Add by Excel ▶</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 수정 ▶</kor>
+    <eng>Update machine map ▶</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 단일 삭제 ▶</kor>
+    <eng>Delete single map record ▶</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 전체 삭제 ▶</kor>
+    <eng>Delete all ▶</eng>
+  </control>
+  <control>
+    <kor>사용여부</kor>
+    <eng>Use or not</eng>
+  </control>
+  <control>
+    <kor>저장여부</kor>
+    <eng>Save or not</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스</kor>
+    <eng>Memorymap Base</eng>
+  </control>
+  <control>
+    <kor>업체코드</kor>
+    <eng>Company Code</eng>
+  </control>
+  <control>
+    <kor>업체구분</kor>
+    <eng>Co. type</eng>
+  </control>
+  <control>
+    <kor>거래유무(Y)</kor>
+    <eng>Use or not</eng>
+  </control>
+  <control>
+    <kor>조회</kor>
+    <eng>Find</eng>
+  </control>
+  <control>
+    <kor>추가</kor>
+    <eng>Add</eng>
+  </control>
+  <control>
+    <kor>수정</kor>
+    <eng>Upd</eng>
+  </control>
+  <control>
+    <kor>삭제</kor>
+    <eng>Del</eng>
+  </control>
+  <control>
+    <kor>인쇄</kor>
+    <eng>Prt</eng>
+  </control>
+  <control>
+    <kor>자료변환</kor>
+    <eng>Convert</eng>
+  </control>
+  <control>
+    <kor>적용</kor>
+    <eng>Apply</eng>
+  </control>
+  <control>
+    <kor>업체상호</kor>
+    <eng>Co. name</eng>
+  </control>
+  <control>
+    <kor>대표자명</kor>
+    <eng>CEO</eng>
+  </control>
+  <control>
+    <kor>사업자번호</kor>
+    <eng>License No.</eng>
+  </control>
+  <control>
+    <kor>전화번호</kor>
+    <eng>Call</eng>
+  </control>
+  <control>
+    <kor>팩스번호</kor>
+    <eng>Fax</eng>
+  </control>
+  <control>
+    <kor>이메일</kor>
+    <eng>E-mail</eng>
+  </control>
+  <control>
+    <kor>세액</kor>
+    <eng>Tax</eng>
+  </control>
+  <control>
+    <kor>거래유무</kor>
+    <eng>Trade status</eng>
+  </control>
+  <control>
+    <kor>업체 담당직원</kor>
+    <eng>Staff in charge</eng>
+  </control>
+  <control>
+    <kor>담당자명</kor>
+    <eng>Name</eng>
+  </control>
+  <control>
+    <kor>부서</kor>
+    <eng>Department</eng>
+  </control>
+  <control>
+    <kor>직위</kor>
+    <eng>Position</eng>
+  </control>
+  <control>
+    <kor>휴대전화</kor>
+    <eng>Mobile</eng>
+  </control>
+  <control>
+    <kor>메모</kor>
+    <eng>Memo</eng>
+  </control>
+  <control>
+    <kor>사용</kor>
+    <eng>Use or not</eng>
+  </control>
+  <control>
+    <kor>등급</kor>
+    <eng>Grade</eng>
+  </control>
+  <control>
+    <kor>통화</kor>
+    <eng>Currency</eng>
+  </control>
+  <control>
+    <kor>국가</kor>
+    <eng>Nation</eng>
+  </control>
+  <control>
+    <kor>상호</kor>
+    <eng>Co. Name</eng>
+  </control>
+  <control>
+    <kor>상호(세금용)</kor>
+    <eng>Name(tax)</eng>
+  </control>
+  <control>
+    <kor>대표자</kor>
+    <eng>CEO</eng>
+  </control>
+  <control>
+    <kor>업태</kor>
+    <eng>Type</eng>
+  </control>
+  <control>
+    <kor>종목</kor>
+    <eng>Item</eng>
+  </control>
+  <control>
+    <kor>홈페이지</kor>
+    <eng>Homepage</eng>
+  </control>
+  <control>
+    <kor>기타전화</kor>
+    <eng>Etc. Call</eng>
+  </control>
+  <control>
+    <kor>우편번호</kor>
+    <eng>Postal code</eng>
+  </control>
+  <control>
+    <kor>주소</kor>
+    <eng>Address</eng>
+  </control>
+  <control>
+    <kor>거래중지사유</kor>
+    <eng>Reason</eng>
+  </control>
+  <control>
+    <kor>공통코드</kor>
+    <eng>Common Code</eng>
+  </control>
+  <control>
+    <kor>공통그룹</kor>
+    <eng>Group name</eng>
+  </control>
+  <control>
+    <kor>지우기</kor>
+    <eng>Clear</eng>
+  </control>
+  <control>
+    <kor>공통그룹</kor>
+    <eng>Common Group</eng>
+  </control>
+  <control>
+    <kor>공통이름</kor>
+    <eng>Common Name</eng>
+  </control>
+  <control>
+    <kor>불량원인코드</kor>
+    <eng>Cause of Defectives</eng>
+  </control>
+  <control>
+    <kor>원인내역</kor>
+    <eng>Detail of Defectives</eng>
+  </control>
+  <control>
+    <kor>구분</kor>
+    <eng>Type</eng>
+  </control>
+  <control>
+    <kor>코드</kor>
+    <eng>Code</eng>
+  </control>
+  <control>
+    <kor>순번</kor>
+    <eng>Seq No.</eng>
+  </control>
+  <control>
+    <kor>원인코드</kor>
+    <eng>Cause Code</eng>
+  </control>
+  <control>
+    <kor>부서코드</kor>
+    <eng>Dept. Code</eng>
+  </control>
+  <control>
+    <kor>부서이름</kor>
+    <eng>Dept. Name</eng>
+  </control>
+  <control>
+    <kor>선택</kor>
+    <eng>Sel</eng>
+  </control>
+  <control>
+    <kor>업체코드 참조</kor>
+    <eng>Company Code Ref.</eng>
+  </control>
+  <control>
+    <kor>부서코드 참조</kor>
+    <eng>Department Code Ref.</eng>
+  </control>
+  <control>
+    <kor>근무코드</kor>
+    <eng>Duty Code</eng>
+  </control>
+  <control>
+    <kor>근무 명칭</kor>
+    <eng>Duty name</eng>
+  </control>
+  <control>
+    <kor>근무번호</kor>
+    <eng>Duty No.</eng>
+  </control>
+  <control>
+    <kor>명칭</kor>
+    <eng>Name</eng>
+  </control>
+  <control>
+    <kor>시작시각</kor>
+    <eng>Start Time</eng>
+  </control>
+  <control>
+    <kor>종료시각</kor>
+    <eng>End Time</eng>
+  </control>
+  <control>
+    <kor>근무시간</kor>
+    <eng>Work Time</eng>
+  </control>
+  <control>
+    <kor>환산시간</kor>
+    <eng>Decimal Time</eng>
+  </control>
+  <control>
+    <kor>사원코드</kor>
+    <eng>Employee Code</eng>
+  </control>
+  <control>
+    <kor>사원이름</kor>
+    <eng>Emp ID</eng>
+  </control>
+  <control>
+    <kor>사용(Y)</kor>
+    <eng>Use(Y)</eng>
+  </control>
+  <control>
+    <kor>부서</kor>
+    <eng>Dept.</eng>
+  </control>
+  <control>
+    <kor>사원번호</kor>
+    <eng>ID</eng>
+  </control>
+  <control>
+    <kor>사원이름</kor>
+    <eng>Name</eng>
+  </control>
+  <control>
+    <kor>표준임률</kor>
+    <eng>Std. Labor</eng>
+  </control>
+  <control>
+    <kor>표준시간</kor>
+    <eng>Std. Work</eng>
+  </control>
+  <control>
+    <kor>알람유무</kor>
+    <eng>Alarm</eng>
+  </control>
+  <control>
+    <kor>비밀번호</kor>
+    <eng>Password</eng>
+  </control>
+  <control>
+    <kor>이미지 불러오기</kor>
+    <eng>Load Img</eng>
+  </control>
+  <control>
+    <kor>이미지 삭제하기</kor>
+    <eng>Delete Img</eng>
+  </control>
+  <control>
+    <kor>사원코드 참조</kor>
+    <eng>Employee Code Ref.</eng>
+  </control>
+  <control>
+    <kor>사용</kor>
+    <eng>Use or not</eng>
+  </control>
+  <control>
+    <kor>에러코드</kor>
+    <eng>Error Code</eng>
+  </control>
+  <control>
+    <kor>서버ID</kor>
+    <eng>Server ID</eng>
+  </control>
+  <control>
+    <kor>설비코드</kor>
+    <eng>Machine Code</eng>
+  </control>
+  <control>
+    <kor>설비이름</kor>
+    <eng>Machine name</eng>
+  </control>
+  <control>
+    <kor>표준가동</kor>
+    <eng>Std. Operation</eng>
+  </control>
+  <control>
+    <kor>관리부서</kor>
+    <eng>Dept in charge</eng>
+  </control>
+  <control>
+    <kor>관리자</kor>
+    <eng>Staff in charge</eng>
+  </control>
+  <control>
+    <kor>점검주기</kor>
+    <eng>Check Term</eng>
+  </control>
+  <control>
+    <kor>설비기종</kor>
+    <eng>Machine Type</eng>
+  </control>
+  <control>
+    <kor>설비IP</kor>
+    <eng>Machine IP</eng>
+  </control>
+  <control>
+    <kor>포트</kor>
+    <eng>Port</eng>
+  </control>
+  <control>
+    <kor>설비번호</kor>
+    <eng>Machine No.</eng>
+  </control>
+  <control>
+    <kor>제조국가</kor>
+    <eng>Nation</eng>
+  </control>
+  <control>
+    <kor>메이커</kor>
+    <eng>Maker</eng>
+  </control>
+  <control>
+    <kor>모델명</kor>
+    <eng>Model name</eng>
+  </control>
+  <control>
+    <kor>제조년월</kor>
+    <eng>Date of Manuf.</eng>
+  </control>
+  <control>
+    <kor>제조번호</kor>
+    <eng>Serial No.</eng>
+  </control>
+  <control>
+    <kor>구입일자</kor>
+    <eng>Date of Pur.</eng>
+  </control>
+  <control>
+    <kor>구입가격</kor>
+    <eng>Pur. Price</eng>
+  </control>
+  <control>
+    <kor>부대비용</kor>
+    <eng>Extra expense</eng>
+  </control>
+  <control>
+    <kor>규격</kor>
+    <eng>Size</eng>
+  </control>
+  <control>
+    <kor>(가로*세로*높이)</kor>
+    <eng>(Wid*Leng*Depth)</eng>
+  </control>
+  <control>
+    <kor>컨트롤러</kor>
+    <eng>Controller</eng>
+  </control>
+  <control>
+    <kor>설비사진</kor>
+    <eng>Machine Image</eng>
+  </control>
+  <control>
+    <kor>기본 정보</kor>
+    <eng>Primary Info.</eng>
+  </control>
+  <control>
+    <kor>설비 내역</kor>
+    <eng>Detail Info.</eng>
+  </control>
+  <control>
+    <kor>규격 및 이미지</kor>
+    <eng>Size / Image</eng>
+  </control>
+  <control>
+    <kor>설비코드 참조</kor>
+    <eng>Machine Code Ref.</eng>
+  </control>
+  <control>
+    <kor>금형코드</kor>
+    <eng>Mold Code</eng>
+  </control>
+  <control>
+    <kor>발주업체</kor>
+    <eng>Ordering Co.</eng>
+  </control>
+  <control>
+    <kor>제작구분</kor>
+    <eng>Classified</eng>
+  </control>
+  <control>
+    <kor>품명</kor>
+    <eng>Product Name</eng>
+  </control>
+  <control>
+    <kor>품번</kor>
+    <eng>Product No.</eng>
+  </control>
+  <control>
+    <kor>캐비티수</kor>
+    <eng>Cavity</eng>
+  </control>
+  <control>
+    <kor>숏트 점검주기</kor>
+    <eng>Shot check term</eng>
+  </control>
+  <control>
+    <kor>적재위치</kor>
+    <eng>Location</eng>
+  </control>
+  <control>
+    <kor>금형구분</kor>
+    <eng>Mold Type</eng>
+  </control>
+  <control>
+    <kor>제작목적</kor>
+    <eng>Goal of Manuf.</eng>
+  </control>
+  <control>
+    <kor>제작등급</kor>
+    <eng>Manuf. Grade</eng>
+  </control>
+  <control>
+    <kor>발주제번</kor>
+    <eng>Order No.</eng>
+  </control>
+  <control>
+    <kor>구매업체</kor>
+    <eng>Pur. Co.</eng>
+  </control>
+  <control>
+    <kor>구매담당</kor>
+    <eng>Pur. Staff</eng>
+  </control>
+  <control>
+    <kor>설계담당(1)</kor>
+    <eng>Design Staff(1)</eng>
+  </control>
+  <control>
+    <kor>설계담당(2)</kor>
+    <eng>Design Staff(2)</eng>
+  </control>
+  <control>
+    <kor>제작업체</kor>
+    <eng>Manuf. Co.</eng>
+  </control>
+  <control>
+    <kor>제작담당(1)</kor>
+    <eng>Manuf. Staff(1)</eng>
+  </control>
+  <control>
+    <kor>제작담당(2)</kor>
+    <eng>Manuf. Staff(2)</eng>
+  </control>
+  <control>
+    <kor>양산업체</kor>
+    <eng>Mass Co.</eng>
+  </control>
+  <control>
+    <kor>원수주업체</kor>
+    <eng>Origianl Co.</eng>
+  </control>
+  <control>
+    <kor>현재소유업체</kor>
+    <eng>Owner Co.</eng>
+  </control>
+  <control>
+    <kor>금형 전체</kor>
+    <eng>Whole part</eng>
+  </control>
+  <control>
+    <kor>상금형</kor>
+    <eng>Upper part</eng>
+  </control>
+  <control>
+    <kor>하금형</kor>
+    <eng>Lower part</eng>
+  </control>
+  <control>
+    <kor>제품</kor>
+    <eng>Product</eng>
+  </control>
+  <control>
+    <kor>등록일자</kor>
+    <eng>Registered</eng>
+  </control>
+  <control>
+    <kor>확정일자</kor>
+    <eng>Decided</eng>
+  </control>
+  <control>
+    <kor>협의일자</kor>
+    <eng>Negotiated</eng>
+  </control>
+  <control>
+    <kor>T0 일자</kor>
+    <eng>T0</eng>
+  </control>
+  <control>
+    <kor>T1 일자</kor>
+    <eng>T1</eng>
+  </control>
+  <control>
+    <kor>초품일자</kor>
+    <eng>Initialized</eng>
+  </control>
+  <control>
+    <kor>합격일자</kor>
+    <eng>Accepted</eng>
+  </control>
+  <control>
+    <kor>출하일자</kor>
+    <eng>Shipment</eng>
+  </control>
+  <control>
+    <kor>도착일자</kor>
+    <eng>Arrival</eng>
+  </control>
+  <control>
+    <kor>양산일자</kor>
+    <eng>Mass Product</eng>
+  </control>
+  <control>
+    <kor>폐기일자</kor>
+    <eng>Discard</eng>
+  </control>
+  <control>
+    <kor>관리 정보</kor>
+    <eng>Manage Info.</eng>
+  </control>
+  <control>
+    <kor>일자 관리</kor>
+    <eng>Date</eng>
+  </control>
+  <control>
+    <kor>금형 수명</kor>
+    <eng>Life Span</eng>
+  </control>
+  <control>
+    <kor>사용 내역</kor>
+    <eng>Use History</eng>
+  </control>
+  <control>
+    <kor>점검 내역</kor>
+    <eng>Check History</eng>
+  </control>
+  <control>
+    <kor>보증수명</kor>
+    <eng>Warrantable</eng>
+  </control>
+  <control>
+    <kor>한계수명</kor>
+    <eng>Limited</eng>
+  </control>
+  <control>
+    <kor>초기숏트</kor>
+    <eng>Init Shot</eng>
+  </control>
+  <control>
+    <kor>누적숏트</kor>
+    <eng>Accum. Shot</eng>
+  </control>
+  <control>
+    <kor>시방횟수</kor>
+    <eng>Spec count</eng>
+  </control>
+  <control>
+    <kor>불량횟수</kor>
+    <eng>Error count</eng>
+  </control>
+  <control>
+    <kor>도면등록횟수</kor>
+    <eng>Blueprint Reg.</eng>
+  </control>
+  <control>
+    <kor>샘플횟수</kor>
+    <eng>Sample count</eng>
+  </control>
+  <control>
+    <kor>점검주기(숏트)</kor>
+    <eng>Term (Shot)</eng>
+  </control>
+  <control>
+    <kor>점검주기(개월)</kor>
+    <eng>Term (Month)</eng>
+  </control>
+  <control>
+    <kor>최종점검일시</kor>
+    <eng>Final check date</eng>
+  </control>
+  <control>
+    <kor>최종점검숏트</kor>
+    <eng>Final Shot</eng>
+  </control>
+  <control>
+    <kor>점검횟수</kor>
+    <eng>Check Count</eng>
+  </control>
+  <control>
+    <kor>기본 사양</kor>
+    <eng>Basic spec</eng>
+  </control>
+  <control>
+    <kor>재질 및 수량</kor>
+    <eng>Material / Quantity</eng>
+  </control>
+  <control>
+    <kor>공증번호</kor>
+    <eng>Notarization No.</eng>
+  </control>
+  <control>
+    <kor>중량</kor>
+    <eng>Weight</eng>
+  </control>
+  <control>
+    <kor>사양</kor>
+    <eng>Spec</eng>
+  </control>
+  <control>
+    <kor>사이클타임</kor>
+    <eng>Cycle Time</eng>
+  </control>
+  <control>
+    <kor>게이트</kor>
+    <eng>Gate</eng>
+  </control>
+  <control>
+    <kor>런너취출</kor>
+    <eng>Runner purge</eng>
+  </control>
+  <control>
+    <kor>제품취출</kor>
+    <eng>Product purge</eng>
+  </control>
+  <control>
+    <kor>사출기종</kor>
+    <eng>Machine Type</eng>
+  </control>
+  <control>
+    <kor>사출방식</kor>
+    <eng>Injection Type</eng>
+  </control>
+  <control>
+    <kor>수축율</kor>
+    <eng>Shirink rate</eng>
+  </control>
+  <control>
+    <kor>금형재질</kor>
+    <eng>Mold</eng>
+  </control>
+  <control>
+    <kor>코어재질</kor>
+    <eng>Core</eng>
+  </control>
+  <control>
+    <kor>캐비티재질</kor>
+    <eng>Cavity</eng>
+  </control>
+  <control>
+    <kor>상S/L재질</kor>
+    <eng>Upper S/L Core</eng>
+  </control>
+  <control>
+    <kor>하S/L재질</kor>
+    <eng>Lower S/L Core</eng>
+  </control>
+  <control>
+    <kor>경사코어재질</kor>
+    <eng>Angular Core</eng>
+  </control>
+  <control>
+    <kor>수량</kor>
+    <eng>Qty.</eng>
+  </control>
+  <control>
+    <kor>금형코드 참조</kor>
+    <eng>Mold Code Ref</eng>
+  </control>
+  <control>
+    <kor>비가동코드</kor>
+    <eng>Non-Operation Code</eng>
+  </control>
+  <control>
+    <kor>비가동 사유</kor>
+    <eng>Cause</eng>
+  </control>
+  <control>
+    <kor>기본시간</kor>
+    <eng>Basic time</eng>
+  </control>
+  <control>
+    <kor>코드</kor>
+    <eng>Code</eng>
+  </control>
+  <control>
+    <kor>비가동사유</kor>
+    <eng>Cause of Non-Operation</eng>
+  </control>
+  <control>
+    <kor>사유</kor>
+    <eng>Cause</eng>
+  </control>
+  <control>
+    <kor>제품코드</kor>
+    <eng>Product Code</eng>
+  </control>
+  <control>
+    <kor>차종명</kor>
+    <eng>Car name</eng>
+  </control>
+  <control>
+    <kor>포장수량</kor>
+    <eng>Packing Qty.</eng>
+  </control>
+  <control>
+    <kor>색상명</kor>
+    <eng>Color name</eng>
+  </control>
+  <control>
+    <kor>색상</kor>
+    <eng>Color</eng>
+  </control>
+  <control>
+    <kor>자재번호</kor>
+    <eng>Material No.</eng>
+  </control>
+  <control>
+    <kor>승인일자</kor>
+    <eng>Approved</eng>
+  </control>
+  <control>
+    <kor>단종일자</kor>
+    <eng>Discontinued</eng>
+  </control>
+  <control>
+    <kor>단종사유</kor>
+    <eng>Reason</eng>
+  </control>
+  <control>
+    <kor>적정재고</kor>
+    <eng>Optimal stock</eng>
+  </control>
+  <control>
+    <kor>현재재고</kor>
+    <eng>Present stock</eng>
+  </control>
+  <control>
+    <kor>제품 상세 이미지</kor>
+    <eng>Product Detail View</eng>
+  </control>
+  <control>
+    <kor>제품사진(1)</kor>
+    <eng>Image(1)</eng>
+  </control>
+  <control>
+    <kor>제품사진(2)</kor>
+    <eng>Image(2)</eng>
+  </control>
+  <control>
+    <kor>제품사진(3)</kor>
+    <eng>Image(3)</eng>
+  </control>
+  <control>
+    <kor>제품사진(4)</kor>
+    <eng>Image(4)</eng>
+  </control>
+  <control>
+    <kor>제품코드 참조</kor>
+    <eng>Product Code Ref.</eng>
+  </control>
+  <control>
+    <kor>수지코드</kor>
+    <eng>Resin Code</eng>
+  </control>
+  <control>
+    <kor>수지이름</kor>
+    <eng>Resin name</eng>
+  </control>
+  <control>
+    <kor>그레이드</kor>
+    <eng>Resin grade</eng>
+  </control>
+  <control>
+    <kor>단위</kor>
+    <eng>Unit</eng>
+  </control>
+  <control>
+    <kor>단가</kor>
+    <eng>Unit Price</eng>
+  </control>
+  <control>
+    <kor>로스율</kor>
+    <eng>Loss rate</eng>
+  </control>
+  <control>
+    <kor>검사구분</kor>
+    <eng>Check type</eng>
+  </control>
+  <control>
+    <kor>수지코드 참조</kor>
+    <eng>Resin Code Ref.</eng>
+  </control>
+  <control>
+    <kor>작업지시</kor>
+    <eng>Work Order</eng>
+  </control>
+  <control>
+    <kor>의뢰일자</kor>
+    <eng>Request Date</eng>
+  </control>
+  <control>
+    <kor>생산업체</kor>
+    <eng>Producer</eng>
+  </control>
+  <control>
+    <kor>시작/종료</kor>
+    <eng>Start/End</eng>
+  </control>
+  <control>
+    <kor>작업시작여부</kor>
+    <eng>Is Started</eng>
+  </control>
+  <control>
+    <kor>작성자</kor>
+    <eng>Writer</eng>
+  </control>
+  <control>
+    <kor>근무구분</kor>
+    <eng>Duty type</eng>
+  </control>
+  <control>
+    <kor>계획시간</kor>
+    <eng>Planned (time)</eng>
+  </control>
+  <control>
+    <kor>공정구분</kor>
+    <eng>Process</eng>
+  </control>
+  <control>
+    <kor>계획수량</kor>
+    <eng>Planned (EA)</eng>
+  </control>
+  <control>
+    <kor>지시일자</kor>
+    <eng>Order date</eng>
+  </control>
+  <control>
+    <kor>지시구분</kor>
+    <eng>Order type</eng>
+  </control>
+  <control>
+    <kor>제품 정보</kor>
+    <eng>Product Info.</eng>
+  </control>
+  <control>
+    <kor>현재고량</kor>
+    <eng>In Stock (EA)</eng>
+  </control>
+  <control>
+    <kor>유효캐비티수</kor>
+    <eng>Actual Cavity</eng>
+  </control>
+  <control>
+    <kor>유효사이클타임</kor>
+    <eng>Actual Cycle</eng>
+  </control>
+  <control>
+    <kor>생산 계획</kor>
+    <eng>Production plan</eng>
+  </control>
+  <control>
+    <kor>생산 정보</kor>
+    <eng>Production Info.</eng>
+  </control>
+  <control>
+    <kor>라인이름</kor>
+    <eng>Line name</eng>
+  </control>
+  <control>
+    <kor>금형번호</kor>
+    <eng>Mold Code</eng>
+  </control>
+  <control>
+    <kor>공정명</kor>
+    <eng>Process</eng>
+  </control>
+  <control>
+    <kor>작업시작시간</kor>
+    <eng>Start time</eng>
+  </control>
+  <control>
+    <kor>작업종료시간</kor>
+    <eng>End time</eng>
+  </control>
+  <control>
+    <kor>작업시간</kor>
+    <eng>Work time</eng>
+  </control>
+  <control>
+    <kor>가동시간</kor>
+    <eng>Operation time</eng>
+  </control>
+  <control>
+    <kor>설비명</kor>
+    <eng>Machine name</eng>
+  </control>
+  <control>
+    <kor>권한설정</kor>
+    <eng>Permission Setting</eng>
+  </control>
+  <control>
+    <kor>부서별 사원 목록</kor>
+    <eng>Employee List By Dept.</eng>
+  </control>
+  <control>
+    <kor>부서별/사원별 권한 설정</kor>
+    <eng>Permission Setting By Dept.[Employee]</eng>
+  </control>
+  <control>
+    <kor>일괄선택 :</kor>
+    <eng>Batch Selection :</eng>
+  </control>
+  <control>
+    <kor>메뉴이름</kor>
+    <eng>Menu name</eng>
+  </control>
+  <control>
+    <kor>메뉴접근</kor>
+    <eng>Access</eng>
+  </control>
+  <control>
+    <kor>비가동 코드</kor>
+    <eng>Non-Op. Code</eng>
+  </control>
+  <control>
+    <kor>기초코드</kor>
+    <eng>Primary Code</eng>
+  </control>
+  <control>
+    <kor>생산관리</kor>
+    <eng>Product Manage</eng>
+  </control>
+  <control>
+    <kor>현황정보</kor>
+    <eng>Status Info.</eng>
+  </control>
+  <control>
+    <kor>시스템</kor>
+    <eng>System</eng>
+  </control>
+  <control>
+    <kor>생산현황</kor>
+    <eng>Current Product</eng>
+  </control>
+  <control>
+    <kor>사출조건현황</kor>
+    <eng>Injection Condtion</eng>
+  </control>
+  <control>
+    <kor>에러발생현황</kor>
+    <eng>Error Occurance</eng>
+  </control>
+  <control>
+    <kor>DB환경</kor>
+    <eng>DB Setting</eng>
+  </control>
+  <control>
+    <kor>사용자환경</kor>
+    <eng>User Setting</eng>
+  </control>
+  <control>
+    <kor>특근</kor>
+    <eng>Overtime</eng>
+  </control>
+  <control>
+    <kor>작업실적</kor>
+    <eng>Work Perf.</eng>
+  </control>
+<control>
+    <kor>작업구분</kor>
+    <eng>Work Type</eng>
+  </control>
+<control>
+    <kor>작업자</kor>
+    <eng>Worker</eng>
+  </control>
+<control>
+    <kor>작업일자</kor>
+    <eng>Work date</eng>
+  </control>
+<control>
+    <kor>업체 코드</kor>
+    <eng>Co. code</eng>
+  </control>
+<control>
+    <kor>세액적용</kor>
+    <eng>Tax applied</eng>
+  </control>
+<control>
+    <kor>메모리맵</kor>
+    <eng>Memory Map</eng>
+  </control>
+  <control>
+    <kor>제조일자</kor>
+    <eng>Manuf. date</eng>
+  </control>
+  <control>
+    <kor>금형 세부 이미지</kor>
+    <eng>Mold Detail View</eng>
+  </control>
+  <control>
+    <kor>선적일자</kor>
+    <eng>Loaded</eng>
+</control>
+  <control>
+    <kor>업체 및 담당 정보</kor>
+    <eng>Co. / Staff in charge</eng>
+  </control>
+<control>
+    <kor>현재값 검색</kor>
+    <eng>Search by value</eng>
+  </control>
+  <control>
+    <kor>검색 취소</kor>
+    <eng>Cancel search</eng>
+  </control>
+  <control>
+    <kor>현컬럼 좌측 고정</kor>
+    <eng>Fix this Column (Left)</eng>
+  </control>
+  <control>
+    <kor>현컬럼 우측 고정</kor>
+    <eng>Fix this Column (Right)</eng>
+  </control>
+  <control>
+    <kor>고정컬럼 해제</kor>
+    <eng>Unfix Columns</eng>
+  </control>
+  <control>
+    <kor>그룹화</kor>
+    <eng>Grouping</eng>
+  </control>
+  <control>
+    <kor>Grid 셋팅</kor>
+    <eng>Grid Layout Setting</eng>
+  </control>
+  <control>
+    <kor>Grid 다중검색</kor>
+    <eng>Search by Filter</eng>
+  </control>
+  <control>
+    <kor>변경사항 적용</kor>
+    <eng>Apply</eng>
+  </control>
+  <control>
+    <kor>담당자 추가</kor>
+    <eng>Add Staff</eng>
+  </control>
+  <control>
+    <kor>담당자 수정</kor>
+    <eng>Upd Staff</eng>
+  </control>
+  <control>
+    <kor>담당자 삭제</kor>
+    <eng>Del Staff</eng>
+  </control>
+  <control>
+    <kor>변환하고자 하는 파일 형식을 선택하세요.</kor>
+    <eng>Please Select a File Format Which You Want to Convert.</eng>
+  </control>
+  <control>
+    <kor>자료변환</kor>
+    <eng>Data Convert</eng>
+  </control>
+ <control>
+    <kor>업체담당</kor>
+    <eng>Staff in charge</eng>
+  </control>
+ <control>
+    <kor>복사</kor>
+    <eng>Copy</eng>
+  </control>
+  <control>
+    <kor>설비별 메모리맵 설정</kor>
+    <eng>Machine Memorymap Setting</eng>
+  </control>
+  <control>
+    <kor>엑셀 파일 불러오기</kor>
+    <eng>Load Excel Files</eng>
+  </control>
+  <control>
+    <kor>맵 데이터 저장</kor>
+    <eng>Save Machinemap Data</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 저장</kor>
+    <eng>Save Memorymap Base Data</eng>
+  </control>
+  <control>
+    <kor>메모리맵 베이스 설정</kor>
+    <eng>Memorymap Base Setting</eng>
+  </control>
+  <control>
+    <kor>사출성형조건표</kor>
+    <eng>Work Cond.</eng>
+  </control>
+  <control>
+    <kor>현동작 상태</kor>
+    <eng>Present Status</eng>
+  </control>
+<control>
+    <kor>연결안됨</kor>
+    <eng>No Response</eng>
+  </control>
+  <control>
+    <kor>후진2차</kor>
+    <eng>BW.2nd</eng>
+  </control>
+  <control>
+    <kor>후진3차</kor>
+    <eng>BW.3rd</eng>
+  </control>
+  <control>
+    <kor>전진2차</kor>
+    <eng>FW.2nd</eng>
+  </control>
+  <control>
+    <kor>전진3차</kor>
+    <eng>FW.3rd</eng>
+  </control>
+  <control>
+    <kor>보압4</kor>
+    <eng>Hdpr.4</eng>
+  </control>
+  <control>
+    <kor>보압5</kor>
+    <eng>Hdpr.5</eng>
+  </control>
+  <control>
+    <kor>보압6</kor>
+    <eng>Hdpr.6</eng>
+  </control>
+  <control>
+    <kor>보압7</kor>
+    <eng>Hdpr.7</eng>
+  </control>
+  <control>
+    <kor>보압8</kor>
+    <eng>Hdpr.8</eng>
+  </control>
+  <control>
+    <kor>보압9</kor>
+    <eng>Hdpr.9</eng>
+  </control>
+  <control>
+    <kor>보압10</kor>
+    <eng>Hdpr.10</eng>
+  </control>
+  <control>
+    <kor>사출 / 보압</kor>
+    <eng>Inj. / Hdpr.</eng>
+  </control>
+  <control>
+    <kor>온도 설정</kor>
+    <eng>Temp. Setting</eng>
+  </control>
+  <control>
+    <kor>무인 운전 전환 시간</kor>
+    <eng>Unmanned Selection</eng>
+  </control>
+  <control>
+    <kor>금형온도</kor>
+    <eng>Mold Temp.</eng>
+  </control>
+  <control>
+    <kor>이젝터</kor>
+    <eng>Ejector</eng>
+  </control>
+  <control>
+    <kor>사출 성형 조건표</kor>
+    <eng>Work Conditions</eng>
+  </control>
+  <control>
+    <kor>계량</kor>
+    <eng>Dosing</eng>
+  </control>
+  <control>
+    <kor>석백</kor>
+    <eng>SuckBack</eng>
+  </control>
+  <control>
+    <kor>보압</kor>
+    <eng>Hdpr.</eng>
+  </control>
+  <control>
+    <kor>차종</kor>
+    <eng>Car Type</eng>
+  </control>
+  <control>
+    <kor>금형</kor>
+    <eng>Mold</eng>
+  </control>
+  <control>
+    <kor>캐비티 수</kor>
+    <eng>Cavity</eng>
+  </control>
+  <control>
+    <kor>양품수량</kor>
+    <eng>Good (EA)</eng>
+  </control>
+  <control>
+    <kor>특이사항 및 기타</kor>
+    <eng>Reference</eng>
+  </control>
+<control>
+    <kor>이젝터 공정 지연 시간</kor>
+    <eng>Ejector Cycle Delay Time</eng>
+  </control>
+  <control>
+    <kor>금형보호 크로스헤드 위치</kor>
+    <eng>Mold Protection Crosshead Pos.</eng>
+</control>
+<control>
+    <kor>코어1</kor>
+    <eng>Core1</eng>
+  </control>
+  <control>
+    <kor>코어2</kor>
+    <eng>Core2</eng>
+  </control>
+  <control>
+    <kor>코어3</kor>
+    <eng>Core3</eng>
+  </control>
+  <control>
+    <kor>코어4</kor>
+    <eng>Core4</eng>
+  </control>
+  <control>
+    <kor>회전코어1</kor>
+    <eng>Unscrew Core1</eng>
+  </control>
+  <control>
+    <kor>회전코어2</kor>
+    <eng>Unscrew Core2</eng>
+  </control>
+
+  <control>
+    <kor>금형 보호 감시 시간</kor>
+    <eng>Mold Protection Time out</eng>
+  </control>
+  <control>
+    <kor>실린더 온도</kor>
+    <eng>Cylinder Temp.</eng>
+  </control>
+
+  <control>
+    <kor>온도상한</kor>
+    <eng>Temperature Hi_s</eng>
+  </control>
+  <control>
+    <kor>온도하한</kor>
+    <eng>Temperature Lo_s</eng>
+  </control>
+  <control>
+    <kor>경보제어</kor>
+    <eng>Alarm Control</eng>
+  </control>
+
+  <control>
+    <kor>온도제어</kor>
+    <eng>Temperature Control</eng>
+  </control>
+
+  <control>
+    <kor>계량4</kor>
+    <eng>Dos.4</eng>
+  </control>
+  <control>
+    <kor>계량5</kor>
+    <eng>Dos.5</eng>
+  </control>
+  <control>
+    <kor>동작시간</kor>
+    <eng>Run time</eng>
+  </control>
+
+  <control>
+    <kor>금형위치</kor>
+    <eng>Mold Position</eng>
+  </control>
+  <control>
+    <kor>지연시간</kor>
+    <eng>Dley time</eng>
+  </control>
+  <control>
+    <kor>확인시간</kor>
+    <eng>Confirm time</eng>
+  </control>
+  <control>
+    <kor>펄스전진횟수</kor>
+    <eng>Tog.Lub FW. Cycles</eng>
+  </control>
+  <control>
+    <kor>펄스후진횟수</kor>
+    <eng>Tog.Lub BW. Cycles</eng>
+  </control>
+
+
+  <control>
+    <kor>동작지연</kor>
+    <eng>Run delay</eng>
+  </control>
+  <control>
+    <kor>기능선택</kor>
+    <eng>Functions</eng>
+  </control>
+  <control>
+    <kor>시간설정</kor>
+    <eng>Time Setting</eng>
+  </control>
+  <control>
+    <kor>금형보호 실제위치</kor>
+    <eng>M.Prot. Actual Position</eng>
+  </control>
+  <control>
+    <kor>동작모드</kor>
+    <eng>Run mode</eng>
+  </control>
+  <control>
+    <kor>금형이젝터 후퇴확인 L/S</kor>
+    <eng>Ejector BW. Confirm L/S</eng>
+  </control>
+  <control>
+    <kor>매회 동작 지연금지</kor>
+    <eng>Prevent Dely Per Cycles</eng>
+  </control>
+  <control>
+    <kor>가스사출스타트위치</kor>
+    <eng>Gas Inj. Start Position</eng>
+  </control>
+  <control>
+    <kor>사용유무/동작모드</kor>
+    <eng>Use or not / Run mode</eng>
+  </control>
+  <control>
+    <kor>완료모드</kor>
+    <eng>Completed</eng>
+  </control>
+  <control>
+    <kor>증압</kor>
+    <eng>Pres.</eng>
+  </control>
+  <control>
+    <kor>보압전환속도</kor>
+    <eng>Hdpr. Switching Speed</eng>
+  </control>
+
+<control>
+    <kor>설비정보</kor>
+    <eng>Machine Info.</eng>
+  </control>
+  <control>
+    <kor>설비타입</kor>
+    <eng>Type</eng>
+  </control>
+  <control>
+    <kor>설비코드</kor>
+    <eng>Code</eng>
+  </control>
+  <control>
+    <kor>설비이름</kor>
+    <eng>Name</eng>
+  </control>
+  <control>
+    <kor>호기</kor>
+    <eng>No.</eng>
+  </control>
+  <control>
+    <kor>최대사출속도</kor>
+    <eng>Max Speed</eng>
+  </control>
+  <control>
+    <kor>최대사출압력</kor>
+    <eng>Max Pressure</eng>
+  </control>
+  <control>
+    <kor>예약 성형 수량</kor>
+    <eng>Goal (EA)</eng>
+  </control>
+  <control>
+    <kor>생산 공정 수량</kor>
+    <eng>Producted (EA)</eng>
+  </control>
+  <control>
+    <kor>실제시간</kor>
+    <eng>Actual Time</eng>
+  </control>
+  <control>
+    <kor>실제 온도</kor>
+    <eng>Actual Temp.</eng>
+  </control>
+  <control>
+    <kor>데이터 동기화 일시정지</kor>
+    <eng>Stop Data Async</eng>
+  </control>
+
+  <control>
+    <kor>형폐시간(전)</kor>
+    <eng>MD.Close(pre)</eng>
+  </control>
+  <control>
+    <kor>형개시간(전)</kor>
+    <eng>MD.Open(pre)</eng>
+  </control>
+  <control>
+    <kor>사출시간(전)</kor>
+    <eng>Inj. Time(pre)</eng>
+  </control>
+  <control>
+    <kor>계량시간(전)</kor>
+    <eng>Dos. Time(pre)</eng>
+  </control>
+  <control>
+    <kor>이젝터 시간(전)</kor>
+    <eng>Ejector Time(pre)</eng>
+  </control>
+  <control>
+    <kor>기계공정시간(전)</kor>
+    <eng>Machine Cycle(pre)</eng>
+  </control>
+  <control>
+    <kor>생산공정시간(전)</kor>
+    <eng>Product Cycle(pre)</eng>
+  </control>
+  <control>
+    <kor>제품수지</kor>
+    <eng>Resin</eng>
+  </control>
+  <control>
+    <kor>작업표준서</kor>
+    <eng>Std. Paper</eng>
+  </control>
+</controls>

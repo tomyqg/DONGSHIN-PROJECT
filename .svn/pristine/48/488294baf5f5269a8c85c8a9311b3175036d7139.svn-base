@@ -1,0 +1,30 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: SmartQUpdate.Program
+// Assembly: SmartQUpdate, Version=1.0.5948.29870, Culture=neutral, PublicKeyToken=null
+// MVID: CB6247AF-5C4D-410C-BC45-5E423657901F
+// Assembly location: C:\Users\YHW\Desktop\SmartQUpdate\SmartQUpdate.exe
+
+using System;
+using System.Windows.Forms;
+
+namespace SmartQUpdate
+{
+ internal static class Program
+  {
+
+      public static ApplicationContext AppContext = new ApplicationContext();
+
+    [STAThread]
+    private static void Main()
+    {
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+     // Application.Run((Form)new AutoUpdate());
+
+      ClientAuthentication auth = new ClientAuthentication();
+      AppContext.MainForm = auth;
+      Application.Run(AppContext);
+    }
+    
+  }
+}

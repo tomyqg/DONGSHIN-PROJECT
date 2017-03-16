@@ -1,0 +1,1476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E892CAB-F5FD-49D5-BA53-9EE46E64FC16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DONGSHIN</RootNamespace>
+    <AssemblyName>DONGSHIN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DevAV.v15.2.Data, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\UPDATE-ZIP\SmartQUpdate\bin\Debug\Ionic.Zip.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00_CommonClass\commonFX.cs" />
+    <Compile Include="00_CommonClass\commonReturn.cs" />
+    <Compile Include="00_CommonClass\commonVar.cs" />
+    <Compile Include="00_CommonClass\DBsql.cs" />
+    <Compile Include="00_CommonClass\encodeDecode.cs" />
+    <Compile Include="00_CommonClass\ftpService.cs" />
+    <Compile Include="00_CommonClass\imgUploadHelper.cs" />
+    <Compile Include="00_CommonClass\LanguageSetter.cs" />
+    <Compile Include="00_CommonClass\MachineInformation.cs" />
+    <Compile Include="00_CommonClass\XmlHelper.cs" />
+    <Compile Include="00_FunctionClass\fx_DBPermission.cs" />
+    <Compile Include="00_FunctionClass\fx_defectiveProductsCode.cs" />
+    <Compile Include="00_FunctionClass\fx_dutyCode.cs" />
+    <Compile Include="00_FunctionClass\fx_moldCode.cs" />
+    <Compile Include="00_FunctionClass\fx_nonOperationCode.cs" />
+    <Compile Include="00_FunctionClass\fx_resinCode.cs" />
+    <Compile Include="00_FunctionClass\fx_workerMain.cs" />
+    <Compile Include="00_FunctionClass\fx_workOrder.cs" />
+    <Compile Include="00_FunctionClass\fx_workPerf.cs" />
+    <Compile Include="01_PrimaryCode\BizCode\frm_bizRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\BizCode\frm_bizRef.Designer.cs">
+      <DependentUpon>frm_bizRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsCode.Designer.cs">
+      <DependentUpon>ctl_defectiveProductsCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsEdit.Designer.cs">
+      <DependentUpon>ctl_defectiveProductsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\frm_defectiveProductsRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DefectiveProductsCode\frm_defectiveProductsRef.Designer.cs">
+      <DependentUpon>frm_defectiveProductsRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DutyCode\ctl_dutyCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DutyCode\ctl_dutyCode.Designer.cs">
+      <DependentUpon>ctl_dutyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DutyCode\ctl_dutyEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DutyCode\ctl_dutyEdit.Designer.cs">
+      <DependentUpon>ctl_dutyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\frm_imageContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\frm_imageContainer.Designer.cs">
+      <DependentUpon>frm_imageContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MachineCode\frm_machineRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MachineCode\frm_machineRef.Designer.cs">
+      <DependentUpon>frm_machineRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\frm_moldRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\frm_moldRef.Designer.cs">
+      <DependentUpon>frm_moldRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationCode.Designer.cs">
+      <DependentUpon>ctl_nonOperationCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationEdit.Designer.cs">
+      <DependentUpon>ctl_nonOperationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\frm_nonOperationRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\NonOperationCode\frm_nonOperationRef.Designer.cs">
+      <DependentUpon>frm_nonOperationRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\frm_productRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\frm_productRef.Designer.cs">
+      <DependentUpon>frm_productRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\ctl_resinCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\ctl_resinCode.Designer.cs">
+      <DependentUpon>ctl_resinCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\ctl_resinEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\ctl_resinEdit.Designer.cs">
+      <DependentUpon>ctl_resinEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\frm_resinRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ResinCode\frm_resinRef.Designer.cs">
+      <DependentUpon>frm_resinRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\ctl_workOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\ctl_workOrder.Designer.cs">
+      <DependentUpon>ctl_workOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\ctl_workOrderEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\ctl_workOrderEdit.Designer.cs">
+      <DependentUpon>ctl_workOrderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\frm_workOrderRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_ProductionManage\workOrder\frm_workOrderRef.Designer.cs">
+      <DependentUpon>frm_workOrderRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_ProductionManage\workPerformance\ctl_workPerformanceEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="02_ProductionManage\workPerformance\ctl_workPerformanceEdit.Designer.cs">
+      <DependentUpon>ctl_workPerformanceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04_StatusInformation\ctl_ErrorStates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="04_StatusInformation\ctl_ErrorStates.Designer.cs">
+      <DependentUpon>ctl_ErrorStates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04_StatusInformation\ctl_InjectionCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="04_StatusInformation\ctl_InjectionCondition.Designer.cs">
+      <DependentUpon>ctl_InjectionCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04_StatusInformation\StatusInfoHelper.cs" />
+    <Compile Include="05_System\ctl_DBPermission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="05_System\ctl_DBPermission.Designer.cs">
+      <DependentUpon>ctl_DBPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\BizCode\ctl_bizCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\BizCode\ctl_bizCode.Designer.cs">
+      <DependentUpon>ctl_bizCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\BizCode\ctl_bizEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\BizCode\ctl_bizEdit.Designer.cs">
+      <DependentUpon>ctl_bizEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\CommonCode\ctl_commonCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\CommonCode\ctl_commonCode.Designer.cs">
+      <DependentUpon>ctl_commonCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\CommonCode\ctl_commonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\CommonCode\ctl_commonEdit.Designer.cs">
+      <DependentUpon>ctl_commonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\frm_empRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\frm_empRef.Designer.cs">
+      <DependentUpon>frm_empRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ErrorCode\ctl_errorCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ErrorCode\ctl_errorCode.Designer.cs">
+      <DependentUpon>ctl_errorCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ErrorCode\ctl_errorEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ErrorCode\ctl_errorEdit.Designer.cs">
+      <DependentUpon>ctl_errorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_empty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_empty.Designer.cs">
+      <DependentUpon>ctl_empty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MachineListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\MachineListControl.Designer.cs">
+      <DependentUpon>MachineListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MachineMonitoringControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\MachineMonitoringControl.Designer.cs">
+      <DependentUpon>MachineMonitoringControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MachineStateItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\MachineStateItemControl.Designer.cs">
+      <DependentUpon>MachineStateItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MachineStateItemControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\MachineStateItemControl2.Designer.cs">
+      <DependentUpon>MachineStateItemControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MachineValueItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\MachineValueItemControl.Designer.cs">
+      <DependentUpon>MachineValueItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UserControlBase.Designer.cs">
+      <DependentUpon>UserControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGridFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGridFilter.designer.cs">
+      <DependentUpon>FormGridFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGridSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGridSetting.designer.cs">
+      <DependentUpon>FormGridSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_worker_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_worker_main.Designer.cs">
+      <DependentUpon>frm_worker_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00_FunctionClass\fx_bizCode.cs" />
+    <Compile Include="00_FunctionClass\fx_commonCode.cs" />
+    <Compile Include="00_FunctionClass\fx_errorCode.cs" />
+    <Compile Include="00_FunctionClass\fx_machineCode.cs" />
+    <Compile Include="00_FunctionClass\fx_productCode.cs" />
+    <Compile Include="01_PrimaryCode\MachineCode\ctl_machineCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MachineCode\ctl_machineCode.Designer.cs">
+      <DependentUpon>ctl_machineCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MachineCode\ctl_machineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MachineCode\ctl_machineEdit.Designer.cs">
+      <DependentUpon>ctl_machineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\ctl_moldCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\ctl_moldCode.Designer.cs">
+      <DependentUpon>ctl_moldCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\ctl_moldEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\MoldCode\ctl_moldEdit.Designer.cs">
+      <DependentUpon>ctl_moldEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\ctl_productCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\ctl_productCode.Designer.cs">
+      <DependentUpon>ctl_productCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\ctl_productEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\ProductCode\ctl_productEdit.Designer.cs">
+      <DependentUpon>ctl_productEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryMap\FormAddBaseMemorymap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryMap\FormAddBaseMemorymap.Designer.cs">
+      <DependentUpon>FormAddBaseMemorymap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryMap\FormAddMachineMemorymap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryMap\FormAddMachineMemorymap.Designer.cs">
+      <DependentUpon>FormAddMachineMemorymap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryMap\memorymapMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MemoryMap\memorymapMain.Designer.cs">
+      <DependentUpon>memorymapMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryMap\memorymapSettingHelper.cs" />
+    <Compile Include="ServerAuthentication\authenticationInfoXml.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\customCheckControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\customCheckControl.Designer.cs">
+      <DependentUpon>customCheckControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\customTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\customTextControl.Designer.cs">
+      <DependentUpon>customTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_6.Designer.cs">
+      <DependentUpon>gbBody_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_6.Designer.cs">
+      <DependentUpon>gbRight_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_6.Designer.cs">
+      <DependentUpon>mcBody_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_6.Designer.cs">
+      <DependentUpon>mcRight_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_6.Designer.cs">
+      <DependentUpon>rbBody_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_6.Designer.cs">
+      <DependentUpon>rbRight_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_1.Designer.cs">
+      <DependentUpon>gbBody_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_2.Designer.cs">
+      <DependentUpon>gbBody_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_3.Designer.cs">
+      <DependentUpon>gbBody_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_4.Designer.cs">
+      <DependentUpon>gbBody_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbBody_5.Designer.cs">
+      <DependentUpon>gbBody_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_1.Designer.cs">
+      <DependentUpon>gbRight_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_2.Designer.cs">
+      <DependentUpon>gbRight_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_3.Designer.cs">
+      <DependentUpon>gbRight_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_4.Designer.cs">
+      <DependentUpon>gbRight_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\gbRight_5.Designer.cs">
+      <DependentUpon>gbRight_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_2.Designer.cs">
+      <DependentUpon>mcBody_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\ctl_deptCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\ctl_deptCode.Designer.cs">
+      <DependentUpon>ctl_deptCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\ctl_deptEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\ctl_deptEdit.Designer.cs">
+      <DependentUpon>ctl_deptEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\frm_deptRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\DeptCode\frm_deptRef.Designer.cs">
+      <DependentUpon>frm_deptRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\ctl_empCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\ctl_empCode.Designer.cs">
+      <DependentUpon>ctl_empCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\ctl_empEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="01_PrimaryCode\EmpCode\ctl_empEdit.Designer.cs">
+      <DependentUpon>ctl_empEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form자료변환출력.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form자료변환출력.designer.cs">
+      <DependentUpon>Form자료변환출력.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00_FunctionClass\fx_deptCode.cs" />
+    <Compile Include="00_FunctionClass\fx_empCode.cs" />
+    <Compile Include="00_FunctionClass\fx_login.cs" />
+    <Compile Include="02_ProductionManage\workPerformance\ctl_workperformance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="02_ProductionManage\workPerformance\ctl_workperformance.Designer.cs">
+      <DependentUpon>ctl_workperformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_worker_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_worker_home.Designer.cs">
+      <DependentUpon>frm_worker_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_manager_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_manager_home.Designer.cs">
+      <DependentUpon>frm_manager_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_3.Designer.cs">
+      <DependentUpon>mcBody_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_4.Designer.cs">
+      <DependentUpon>mcBody_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_5.Designer.cs">
+      <DependentUpon>mcBody_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_3.Designer.cs">
+      <DependentUpon>mcRight_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_4.Designer.cs">
+      <DependentUpon>mcRight_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_5.Designer.cs">
+      <DependentUpon>mcRight_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="workerHomeControls\mcBody_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcBody_1.Designer.cs">
+      <DependentUpon>mcBody_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_1.Designer.cs">
+      <DependentUpon>mcRight_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\mcRight_2.Designer.cs">
+      <DependentUpon>mcRight_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_1.Designer.cs">
+      <DependentUpon>rbBody_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_2.Designer.cs">
+      <DependentUpon>rbBody_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_3.Designer.cs">
+      <DependentUpon>rbBody_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_4.Designer.cs">
+      <DependentUpon>rbBody_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbBody_5.Designer.cs">
+      <DependentUpon>rbBody_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_1.Designer.cs">
+      <DependentUpon>rbRight_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_2.Designer.cs">
+      <DependentUpon>rbRight_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_3.Designer.cs">
+      <DependentUpon>rbRight_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_4.Designer.cs">
+      <DependentUpon>rbRight_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="workerHomeControls\rbRight_5.Designer.cs">
+      <DependentUpon>rbRight_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPerformanceControls\ResinLotReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkPerformanceControls\ResinLotReading.Designer.cs">
+      <DependentUpon>ResinLotReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPerformanceControls\WorkPerformanceMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkPerformanceControls\WorkPerformanceMain.Designer.cs">
+      <DependentUpon>WorkPerformanceMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPerformanceControls\WorkPerformanceSettingHelper.cs" />
+    <EmbeddedResource Include="01_PrimaryCode\BizCode\frm_bizRef.resx">
+      <DependentUpon>frm_bizRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsCode.resx">
+      <DependentUpon>ctl_defectiveProductsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DefectiveProductsCode\ctl_defectiveProductsEdit.resx">
+      <DependentUpon>ctl_defectiveProductsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DefectiveProductsCode\frm_defectiveProductsRef.resx">
+      <DependentUpon>frm_defectiveProductsRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DutyCode\ctl_dutyCode.resx">
+      <DependentUpon>ctl_dutyCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DutyCode\ctl_dutyEdit.resx">
+      <DependentUpon>ctl_dutyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\frm_imageContainer.resx">
+      <DependentUpon>frm_imageContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MachineCode\frm_machineRef.resx">
+      <DependentUpon>frm_machineRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MoldCode\frm_moldRef.resx">
+      <DependentUpon>frm_moldRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationCode.resx">
+      <DependentUpon>ctl_nonOperationCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\NonOperationCode\ctl_nonOperationEdit.resx">
+      <DependentUpon>ctl_nonOperationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\NonOperationCode\frm_nonOperationRef.resx">
+      <DependentUpon>frm_nonOperationRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ProductCode\frm_productRef.resx">
+      <DependentUpon>frm_productRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ResinCode\ctl_resinCode.resx">
+      <DependentUpon>ctl_resinCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ResinCode\ctl_resinEdit.resx">
+      <DependentUpon>ctl_resinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ResinCode\frm_resinRef.resx">
+      <DependentUpon>frm_resinRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_ProductionManage\workOrder\ctl_workOrder.resx">
+      <DependentUpon>ctl_workOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_ProductionManage\workOrder\ctl_workOrderEdit.resx">
+      <DependentUpon>ctl_workOrderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_ProductionManage\workOrder\frm_workOrderRef.resx">
+      <DependentUpon>frm_workOrderRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_ProductionManage\workPerformance\ctl_workPerformanceEdit.resx">
+      <DependentUpon>ctl_workPerformanceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04_StatusInformation\ctl_ErrorStates.resx">
+      <DependentUpon>ctl_ErrorStates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04_StatusInformation\ctl_InjectionCondition.resx">
+      <DependentUpon>ctl_InjectionCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_empty.resx">
+      <DependentUpon>ctl_empty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05_System\ctl_DBPermission.resx">
+      <DependentUpon>ctl_DBPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\BizCode\ctl_bizCode.resx">
+      <DependentUpon>ctl_bizCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\BizCode\ctl_bizEdit.resx">
+      <DependentUpon>ctl_bizEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\CommonCode\ctl_commonCode.resx">
+      <DependentUpon>ctl_commonCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\CommonCode\ctl_commonEdit.resx">
+      <DependentUpon>ctl_commonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\EmpCode\frm_empRef.resx">
+      <DependentUpon>frm_empRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ErrorCode\ctl_errorCode.resx">
+      <DependentUpon>ctl_errorCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ErrorCode\ctl_errorEdit.resx">
+      <DependentUpon>ctl_errorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\MachineListControl.resx">
+      <DependentUpon>MachineListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\MachineMonitoringControl.resx">
+      <DependentUpon>MachineMonitoringControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\MachineStateItemControl.resx">
+      <DependentUpon>MachineStateItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\MachineStateItemControl2.resx">
+      <DependentUpon>MachineStateItemControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\MachineValueItemControl.resx">
+      <DependentUpon>MachineValueItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UserControlBase.resx">
+      <DependentUpon>UserControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGridFilter.resx">
+      <DependentUpon>FormGridFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGridSetting.resx">
+      <DependentUpon>FormGridSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_worker_main.resx">
+      <DependentUpon>frm_worker_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MachineCode\ctl_machineCode.resx">
+      <DependentUpon>ctl_machineCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MachineCode\ctl_machineEdit.resx">
+      <DependentUpon>ctl_machineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MoldCode\ctl_moldCode.resx">
+      <DependentUpon>ctl_moldCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\MoldCode\ctl_moldEdit.resx">
+      <DependentUpon>ctl_moldEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ProductCode\ctl_productCode.resx">
+      <DependentUpon>ctl_productCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\ProductCode\ctl_productEdit.resx">
+      <DependentUpon>ctl_productEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryMap\FormAddBaseMemorymap.resx">
+      <DependentUpon>FormAddBaseMemorymap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryMap\FormAddMachineMemorymap.resx">
+      <DependentUpon>FormAddMachineMemorymap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryMap\memorymapMain.resx">
+      <DependentUpon>memorymapMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\customCheckControl.resx">
+      <DependentUpon>customCheckControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\customTextControl.resx">
+      <DependentUpon>customTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_6.resx">
+      <DependentUpon>gbBody_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_6.resx">
+      <DependentUpon>gbRight_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_6.resx">
+      <DependentUpon>mcBody_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_6.resx">
+      <DependentUpon>mcRight_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_6.resx">
+      <DependentUpon>rbBody_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_6.resx">
+      <DependentUpon>rbRight_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_1.resx">
+      <DependentUpon>gbBody_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_2.resx">
+      <DependentUpon>gbBody_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_3.resx">
+      <DependentUpon>gbBody_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_4.resx">
+      <DependentUpon>gbBody_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbBody_5.resx">
+      <DependentUpon>gbBody_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_1.resx">
+      <DependentUpon>gbRight_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_2.resx">
+      <DependentUpon>gbRight_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_3.resx">
+      <DependentUpon>gbRight_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_4.resx">
+      <DependentUpon>gbRight_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\gbRight_5.resx">
+      <DependentUpon>gbRight_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_1.resx">
+      <DependentUpon>mcBody_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_2.resx">
+      <DependentUpon>mcBody_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DeptCode\ctl_deptCode.resx">
+      <DependentUpon>ctl_deptCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DeptCode\ctl_deptEdit.resx">
+      <DependentUpon>ctl_deptEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\DeptCode\frm_deptRef.resx">
+      <DependentUpon>frm_deptRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\EmpCode\ctl_empCode.resx">
+      <DependentUpon>ctl_empCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_PrimaryCode\EmpCode\ctl_empEdit.resx">
+      <DependentUpon>ctl_empEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_ProductionManage\workPerformance\ctl_workperformance.resx">
+      <DependentUpon>ctl_workperformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form자료변환출력.resx">
+      <DependentUpon>Form자료변환출력.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_manager_home.resx">
+      <DependentUpon>frm_manager_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_worker_home.resx">
+      <DependentUpon>frm_worker_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_3.resx">
+      <DependentUpon>mcBody_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_4.resx">
+      <DependentUpon>mcBody_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcBody_5.resx">
+      <DependentUpon>mcBody_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_3.resx">
+      <DependentUpon>mcRight_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_4.resx">
+      <DependentUpon>mcRight_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_5.resx">
+      <DependentUpon>mcRight_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_1.resx">
+      <DependentUpon>mcRight_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\mcRight_2.resx">
+      <DependentUpon>mcRight_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_1.resx">
+      <DependentUpon>rbBody_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_2.resx">
+      <DependentUpon>rbBody_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_3.resx">
+      <DependentUpon>rbBody_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_4.resx">
+      <DependentUpon>rbBody_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbBody_5.resx">
+      <DependentUpon>rbBody_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_1.resx">
+      <DependentUpon>rbRight_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_2.resx">
+      <DependentUpon>rbRight_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_3.resx">
+      <DependentUpon>rbRight_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_4.resx">
+      <DependentUpon>rbRight_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerHomeControls\rbRight_5.resx">
+      <DependentUpon>rbRight_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPerformanceControls\ResinLotReading.resx">
+      <DependentUpon>ResinLotReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPerformanceControls\WorkPerformanceMain.resx">
+      <DependentUpon>WorkPerformanceMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_conditionmanage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_manufacture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_monitoring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_primarycode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_workorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_workperformance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_opacity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_dept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_onoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManualModeOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullautoModeOn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoldsetupModeOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SemiautoModeOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TempkeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClampkeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClampkeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClampkeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorekeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorekeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorekeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InjectionkeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InjectionkeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InjectionkeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonitoringkeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonitoringkeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonitoringkeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TempkeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TempkeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_biz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_memorymap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_mold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_injectCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_common.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_dbsetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_dataconvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_mobi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_tel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_fax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_tel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DongshinLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitorNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitorSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typeGB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typeRB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DongshinLogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModbusTcp\ModbusTcp.csproj">
+      <Project>{695b5a8c-f1d4-402a-9a62-de3bb7cbe5f1}</Project>
+      <Name>ModbusTcp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_duty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_nonoperation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_defective.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_resin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memorymapSettingClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memorymapSettingNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConditionKeyOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConditionKeyHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConditionKeyOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typeMC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modeAlarm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modeAuto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modeHalfAuto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modeLow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modeManual2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorOff.png" />
+    <None Include="Resources\HeaterOn.png" />
+    <None Include="Resources\HeaterOff.png" />
+    <None Include="Resources\AlarmOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_BG_LOADING.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_BG_LOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\performanceNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\performanceSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JisiNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeolbiNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeumhyeongNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JepumNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SujiNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigadongNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BullyangNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabelNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JisiSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeolbiSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeumhyeongSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JepumSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SujiSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigadongSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BullyangSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabelSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DongShinLogo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_BI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lostConnection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_LOADING_GIF_FAST.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lostConnection_iconOnly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONPER_GIF_LOADING_WITH_LOGO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\img_GB.png" />
+    <Content Include="Resources\img_MC.png" />
+    <Content Include="Resources\img_RB.png" />
+    <None Include="Resources\StartNormal.png" />
+    <None Include="Resources\SijakSelected.png" />
+    <Content Include="Resources\typeKT.jpg" />
+    <Content Include="Resources\typePL.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
