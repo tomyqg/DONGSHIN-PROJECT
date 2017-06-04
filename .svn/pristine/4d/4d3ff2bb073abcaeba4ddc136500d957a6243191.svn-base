@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevExpress.XtraEditors.Controls;
+
+namespace DONGSHIN
+{
+    public partial class ctl_Settings : UserControl
+    {
+        public ctl_Settings()
+        {
+            InitializeComponent();
+            buttonSaveLocation.ButtonClick+=buttonSaveLocation_ButtonClick;
+        }
+
+        private void buttonSaveLocation_ButtonClick(object sender, ButtonPressedEventArgs e)
+        {
+            FolderBrowserDialog  file = new FolderBrowserDialog ();
+            file.ShowDialog();
+            buttonSaveLocation.Text = file.SelectedPath;
+            
+        }
+    }
+}

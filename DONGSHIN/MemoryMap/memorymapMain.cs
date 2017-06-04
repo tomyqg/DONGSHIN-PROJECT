@@ -75,13 +75,13 @@ namespace DONGSHIN
             buttons_Type = new SimpleButton[] { btnAddMaptype, btnUpdateMaptype, btnDeleteMaptype };
             buttons_MachineMap = new SimpleButton[] { btnAddMachinemapSingle, btnAddMachinemap, btnUpdateMachinemap, btnDeleteMachinemap, btnDeleteAllMachinemap };
 
-            for ( int i = 0 ; i < buttons_Base.Length ; i++ )
+            for (int i = 0; i < buttons_Base.Length; i++)
                 buttons_Base[i].MouseClick += new MouseEventHandler(setBaseMode);
 
-            for ( int i = 0 ; i < buttons_Type.Length ; i++ )
+            for (int i = 0; i < buttons_Type.Length; i++)
                 buttons_Type[i].MouseClick += new MouseEventHandler(setTypeMode);
 
-            for ( int i = 0 ; i < buttons_MachineMap.Length ; i++ )
+            for (int i = 0; i < buttons_MachineMap.Length; i++)
                 buttons_MachineMap[i].MouseClick += new MouseEventHandler(setMachineMode);
         }
 
@@ -89,16 +89,16 @@ namespace DONGSHIN
         {
             SimpleButton control = (SimpleButton)sender;
             string tag = Convert.ToString(control.Tag);
-            switch ( tag )
+            switch (tag)
             {
                 case "add":
-                    if ( baseSelected != 1 )
+                    if (baseSelected != 1)
                         baseSelected = 1;
                     else
                         baseSelected = 0;
                     break;
                 case "update":
-                    if ( baseSelected != 2 )
+                    if (baseSelected != 2)
                         baseSelected = 2;
                     else
                         baseSelected = 0;
@@ -115,16 +115,16 @@ namespace DONGSHIN
         {
             SimpleButton control = (SimpleButton)sender;
             string tag = Convert.ToString(control.Tag);
-            switch ( tag )
+            switch (tag)
             {
                 case "add":
-                    if ( typeSelected != 1 )
+                    if (typeSelected != 1)
                         typeSelected = 1;
                     else
                         typeSelected = 0;
                     break;
                 case "update":
-                    if ( typeSelected != 2 )
+                    if (typeSelected != 2)
                         typeSelected = 2;
                     else
                         typeSelected = 0;
@@ -141,16 +141,16 @@ namespace DONGSHIN
         {
             SimpleButton control = (SimpleButton)sender;
             string tag = Convert.ToString(control.Tag);
-            switch ( tag )
+            switch (tag)
             {
                 case "add":
-                    if ( machineSelected != 1 )
+                    if (machineSelected != 1)
                         machineSelected = 1;
                     else
                         machineSelected = 0;
                     break;
                 case "update":
-                    if ( machineSelected != 2 )
+                    if (machineSelected != 2)
                         machineSelected = 2;
                     else
                         machineSelected = 0;
@@ -430,11 +430,6 @@ namespace DONGSHIN
             catch ( Exception ex ) { MessageBox.Show(ex.Message); }
         }
 
-        private void setMaptypeMode(object sender, EventArgs e)
-        {
-
-        }
-
         //맵타입이 바뀔 때 마다 해당 맵코드를 읽어옴
         private void gridView2_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -702,6 +697,8 @@ namespace DONGSHIN
         }
 
         #endregion
+
+       
 
       
 

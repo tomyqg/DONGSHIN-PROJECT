@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <AutoLogin>False</AutoLogin>
+  <UserId>USER</UserId>
+  <Language>한국어</Language>
+  <LocalFilePath />
+  <CompanyName>피디엠테크</CompanyName>
+  <CompanyCode>A-1611</CompanyCode>
+  <Authentication>true</Authentication>
+</Settings>

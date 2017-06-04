@@ -1,0 +1,712 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Data.OleDb;
+using System.IO;
+using System.Data.SqlClient;
+using DevExpress.XtraEditors;
+
+namespace DONGSHIN
+
+{
+    public partial class memorymapMain : UserControl
+    {
+        public memorymapMain()
+        {
+            InitializeComponent();
+            commonFX.setThisLanguage(this);
+            initializeButtons();
+        }
+
+        public enum baseMemoryMap { add, add2, update, delete, delete2 }
+        public enum mapType { add, update, delete }
+        public enum machineMap { add, add2, update, delete, delete2 }
+        private SimpleButton[] buttons_Base;
+        private SimpleButton[] buttons_Type;
+        private SimpleButton[] buttons_MachineMap;
+        private int typeSelected = 0;
+        private int baseSelected = 0;
+        private int machineSelected = 0;
+
+        private string originalBaseCode = string.Empty;
+        private string originalMapType = string.Empty;
+
+
+
+        private void memorymapMain_Load(object sender, EventArgs e)
+        {
+            updateBaseMemorymapSource();
+
+            if ( gridView1.RowCount > 0 )
+                updateMapTypeSource();
+        }
+
+
+
+        #region 버튼 초기화 및 설정 관련
+
+        private void initializeButtons()
+        {
+            //베이스메모리맵
+            btnAddBaseSingle.Tag = baseMemoryMap.add;
+            btnAddBase.Tag = baseMemoryMap.add2;
+            btnUpdateBase.Tag = baseMemoryMap.update;
+            btnDeleteMachinemap.Tag = baseMemoryMap.delete;
+            btnDeleteAllMachinemap.Tag = baseMemoryMap.delete2;
+
+            //맵타입
+            btnAddMaptype.Tag = mapType.add;
+            btnUpdateMaptype.Tag = mapType.update;
+            btnDeleteMaptype.Tag = mapType.delete;
+
+            //설비별
+            btnAddMachinemapSingle.Tag = machineMap.add;
+            btnAddMachinemap.Tag = machineMap.add2;
+            btnUpdateMachinemap.Tag = machineMap.update;
+            btnDeleteMachinemap.Tag = machineMap.delete;
+            btnDeleteAllMachinemap.Tag = machineMap.delete2;
+
+            buttons_Base = new SimpleButton[] { btnAddBaseSingle, btnAddBase, btnUpdateBase, btnBaseDeleteSingle, btnBaseDeleteAll };
+            buttons_Type = new SimpleButton[] { btnAddMaptype, btnUpdateMaptype, btnDeleteMaptype };
+            buttons_MachineMap = new SimpleButton[] { btnAddMachinemapSingle, btnAddMachinemap, btnUpdateMachinemap, btnDeleteMachinemap, btnDeleteAllMachinemap };
+
+            for ( int i = 0 ; i < buttons_Base.Length ; i++ )
+                buttons_Base[i].MouseClick += new MouseEventHandler(setBaseMode);
+
+            for ( int i = 0 ; i < buttons_Type.Length ; i++ )
+                buttons_Type[i].MouseClick += new MouseEventHandler(setTypeMode);
+
+            for ( int i = 0 ; i < buttons_MachineMap.Length ; i++ )
+                buttons_MachineMap[i].MouseClick += new MouseEventHandler(setMachineMode);
+        }
+
+        private void setBaseMode(object sender, EventArgs e)
+        {
+            SimpleButton control = (SimpleButton)sender;
+            string tag = Convert.ToString(control.Tag);
+            switch ( tag )
+            {
+                case "add":
+                    if ( baseSelected != 1 )
+                        baseSelected = 1;
+                    else
+                        baseSelected = 0;
+                    break;
+                case "update":
+                    if ( baseSelected != 2 )
+                        baseSelected = 2;
+                    else
+                        baseSelected = 0;
+                    break;
+                default:
+                    baseSelected = 0;
+                    break;
+            }
+
+            setButtonSelect(baseSelected, control, gridView1, buttons_Base);
+        }
+
+        private void setTypeMode(object sender, EventArgs e)
+        {
+            SimpleButton control = (SimpleButton)sender;
+            string tag = Convert.ToString(control.Tag);
+            switch ( tag )
+            {
+                case "add":
+                    if ( typeSelected != 1 )
+                        typeSelected = 1;
+                    else
+                        typeSelected = 0;
+                    break;
+                case "update":
+                    if ( typeSelected != 2 )
+                        typeSelected = 2;
+                    else
+                        typeSelected = 0;
+                    break;
+                default:
+                    typeSelected = 0;
+                    break;
+            }
+
+            setButtonSelect(typeSelected, control, gridView2, buttons_Type);
+        }
+
+        private void setMachineMode(object sender, EventArgs e)
+        {
+            SimpleButton control = (SimpleButton)sender;
+            string tag = Convert.ToString(control.Tag);
+            switch ( tag )
+            {
+                case "add":
+                    if ( machineSelected != 1 )
+                        machineSelected = 1;
+                    else
+                        machineSelected = 0;
+                    break;
+                case "update":
+                    if ( machineSelected != 2 )
+                        machineSelected = 2;
+                    else
+                        machineSelected = 0;
+                    break;
+                default:
+                    machineSelected = 0;
+                    break;
+            }
+
+            setButtonSelect(machineSelected, control, gridView3, buttons_MachineMap);
+        }
+
+        private void setButtonSelect(int whichSelected, SimpleButton buttonClicked, DevExpress.XtraGrid.Views.Grid.GridView _gridView, SimpleButton[] buttons)
+        {
+            bool isReadOnly = _gridView.OptionsBehavior.ReadOnly;
+
+            switch ( whichSelected )
+            {
+                case 1:
+                case 2:
+                    if ( isReadOnly )
+                        _gridView.OptionsBehavior.ReadOnly = false;
+
+                    for ( int i = 0 ; i < buttons.Length ; i++ )
+                    {
+                        if ( buttons[i] == buttonClicked )
+                            buttons[i].ForeColor = Color.Red;
+                        else
+                            buttons[i].ForeColor = Color.Black;
+                    }
+                    break;
+
+                default:
+                    if ( !isReadOnly )
+                        _gridView.OptionsBehavior.ReadOnly = true;
+
+                    for ( int i = 0 ; i < buttons.Length ; i++ )
+                        buttons[i].ForeColor = Color.Black;
+                    break;
+            }
+
+        }
+
+        #endregion
+
+        private int checkAnyBlanks(string from, DataRow row)
+        {
+            string[] columnNames = null;
+            string[] gridCols = null;
+            int arrLength = 0;
+            int count = 0;
+
+
+            switch ( from )
+            {
+                case "BaseMemoryMap":
+                    columnNames = new string[] { "FieldCode", "FieldName" };
+
+                    arrLength = gridView1.Columns.Count;
+                    gridCols = new string[arrLength];
+
+                    for ( int i = 0 ; i < gridView1.Columns.Count ; i++ )
+                        gridCols[i] = gridView1.Columns[i].FieldName;
+
+                    break;
+
+                case "MapType":
+                    columnNames = new string[] { "MapType", "Offset" };
+
+                    arrLength = gridView2.Columns.Count;
+                    gridCols = new string[arrLength];
+
+                    for ( int i = 0 ; i < gridCols.Length ; i++ )
+                        gridCols[i] = gridView2.Columns[i].FieldName;
+
+                    break;
+
+                case "MachineMap":
+                    columnNames = new string[] { "FieldCode", "DataLength", "UseOrNot", "SaveOrNot" };
+
+                    arrLength = gridView3.Columns.Count;
+                    gridCols = new string[arrLength];
+
+                    for ( int i = 0 ; i < gridView3.Columns.Count ; i++ )                        
+                        gridCols[i] = gridView3.Columns[i].FieldName;
+
+                    break;
+            }
+
+            for ( int j = 0 ; j < columnNames.Length ; j++ )
+            {
+                for ( int k = 0 ; k < gridCols.Length ; k++ )
+                {
+                    if ( gridCols[k].Equals(columnNames[j]) )
+                    {
+                        if ( row[gridCols[k]].ToString().Length == 0 )
+                            count++;
+                    }
+                }
+            }
+
+
+            return count;
+        }
+
+
+        #region BaseMemoryMap
+
+
+        private void addBaseMemoryMapFile(object sender, EventArgs e)
+        {
+            if ( gridView1.DataRowCount == 0 )
+            {
+                FormAddBaseMemorymap addNew = new FormAddBaseMemorymap();
+                addNew.ShowDialog();
+
+                if ( addNew.ExceptionMessage.Length > 0 )
+                    MessageBox.Show(addNew.ExceptionMessage);
+                else
+                {
+                    updateBaseMemorymapSource();
+                    updateMapTypeSource();
+                }
+            }
+            else
+            {
+                MessageBox.Show("항목이 존재하지 않을때만 사용가능합니다.\n사용하시려면 현재 존재하는 항목을 삭제해주세요\n");
+            }
+        }
+
+
+        private void updateBaseMemorymapSource()
+        {
+            try
+            {
+                DataTable source = memorymapSettingHelper.getBaseMemoryMap();
+                gridControl1.DataSource = source;
+            }
+            catch ( Exception ex ) { MessageBox.Show(ex.Message); }
+        }
+
+
+
+
+        private void gridView1_CellValueChanging(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            try
+            {
+                int ix = gridView1.FocusedRowHandle;
+
+                if ( !gridView1.IsNewItemRow(ix) && !gridView1.IsFilterRow(ix) )
+                    originalBaseCode = gridView1.GetDataRow(gridView1.FocusedRowHandle)["FieldCode"].ToString();
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void gridView1_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            DataRow tmp = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            string errorMsg = string.Empty;
+
+            int countBlanks = checkAnyBlanks("BaseMemoryMap", tmp);
+
+            if ( countBlanks > 0 )
+            {
+                MessageBox.Show("입력하지 않은 항목이 존재합니다.\n\r확인하세요.");
+            }
+            else
+            {
+                try
+                {
+                    if ( gridView1.IsNewItemRow(e.RowHandle) )
+                    {
+                        if ( baseSelected != 1 )
+                            MessageBox.Show("다른 작업이 진행중입니다.\n\r추가할 수 없습니다.");                                                    
+                        else
+                        {
+                            errorMsg = memorymapSettingHelper.insertBaseMemoryMap(tmp);
+                            if ( errorMsg.Length > 0 )
+                                MessageBox.Show(errorMsg, "메모리맵 베이스 등록 실패");
+                        }
+                    }
+                    else
+                    {
+                        if ( baseSelected != 2 )
+                            MessageBox.Show("다른 작업이 진행중입니다.\n\r수정할 수 없습니다.");
+                        else
+                        {
+                            errorMsg = memorymapSettingHelper.updateBaseMemoryMap(tmp, originalBaseCode);
+                            if ( errorMsg.Length > 0 )
+                                MessageBox.Show(errorMsg, "메모리맵 베이스 등록 실패");
+                        }
+                    }
+                    updateBaseMemorymapSource();
+                }
+                catch ( Exception ex )
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            updateBaseMemorymapSource();
+        }
+
+
+        private void deleteBaseMemorymap(object sender, EventArgs e)
+        {
+
+            
+            int ix = gridView1.FocusedRowHandle;
+            if ( gridView1.IsNewItemRow(ix) || gridView1.RowCount==0)
+            {
+                MessageBox.Show("삭제 대상이 존재하지 않습니다.");
+            }
+            else
+            {
+                DialogResult question = MessageBox.Show("메모리맵 베이스 데이터를 삭제하시겠습니까?", "메모리맵 베이스 삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if ( question == DialogResult.Yes )
+                {
+                    string code = gridView1.GetDataRow(gridView1.FocusedRowHandle)["FieldCode"].ToString();
+                    string errMsg = string.Empty;
+
+                    if ( ((SimpleButton)sender).Name == "btnBaseDeleteSingle" )
+                    {
+                        errMsg = memorymapSettingHelper.deleteSingleBaseMemoryMapRecord(code);
+
+                        if ( errMsg.Length > 0 )
+                            MessageBox.Show(errMsg, "메모리맵 베이스 삭제 실패");
+                    }
+                    else
+                    {
+                        errMsg = memorymapSettingHelper.deleteBaseMemoryMap();
+
+                        if ( errMsg.Length > 0 )
+                            MessageBox.Show(errMsg, "메모리맵 베이스 삭제 실패");
+                    }
+                }
+            }
+            updateBaseMemorymapSource();
+        }
+
+        #endregion
+
+
+
+        #region MemoryMapType
+        
+
+        private string getMapTypeFromGridview2()
+        {
+            DataRow mapTypeRow = gridView2.GetDataRow(gridView2.FocusedRowHandle);
+            int ix = gridView2.FocusedRowHandle;
+
+            if ( mapTypeRow == null || gridView2.IsNewItemRow(ix) )
+            {
+                return string.Empty;
+            }
+            else
+            {
+                string type = mapTypeRow["MapType"].ToString();
+                return type;
+            }
+
+        }
+
+
+        private void updateMapTypeSource()
+        {
+            try
+            {
+                DataTable source = memorymapSettingHelper.getMemorymapType();
+                gridControl2.DataSource = source;
+            }
+            catch ( Exception ex ) { MessageBox.Show(ex.Message); }
+        }
+
+        private void setMaptypeMode(object sender, EventArgs e)
+        {
+
+        }
+
+        //맵타입이 바뀔 때 마다 해당 맵코드를 읽어옴
+        private void gridView2_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            updateMachineMemorymapSource();
+        }                       
+
+
+        private void gridView2_CellValueChanging(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            try
+            {
+                int ix = gridView2.FocusedRowHandle;
+                if ( !gridView2.IsNewItemRow(ix) )
+                    originalMapType = gridView2.GetDataRow(gridView2.FocusedRowHandle)["MapType"].ToString();
+            }
+            catch ( Exception ex )
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void gridView2_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            DataRow tmp = gridView2.GetDataRow(gridView2.FocusedRowHandle);
+            string errorMsg = string.Empty;
+            int countBlanks = checkAnyBlanks("MapType", tmp);
+
+            if ( countBlanks > 0 )
+            {
+                MessageBox.Show("입력하지 않은 항목이 존재합니다.\n\r확인하세요.");
+            }
+            else
+            {
+                try
+                {
+                    if ( gridView2.IsNewItemRow(e.RowHandle) )
+                    {
+                        if ( typeSelected != 1 )
+                            MessageBox.Show("다른 작업이 진행중입니다.\n\r추가할 수 없습니다.");
+                        else
+                        {
+                            errorMsg = memorymapSettingHelper.insertMemoryMapType(tmp);
+
+                            if ( errorMsg.Length > 0 )
+                                MessageBox.Show(errorMsg, "맵타입 등록 실패");
+                        }
+                    }
+                    else
+                    {
+                        if ( typeSelected != 2 )
+                            MessageBox.Show("다른 작업이 진행중입니다.\n\r수정할 수 없습니다.");
+                        else
+                        {
+                            errorMsg = memorymapSettingHelper.updateMemoryMapType(tmp, originalMapType);
+
+                            if ( errorMsg.Length > 0 )
+                                MessageBox.Show(errorMsg, "맵타입 등록 실패");
+                        }
+                    }
+                }
+                catch ( Exception ex ) { MessageBox.Show(ex.Message); }
+            }
+            updateMapTypeSource();
+        }
+
+
+        private void deleteMemorymapType(object sender, EventArgs e)
+        {
+
+
+            int ix = gridView2.FocusedRowHandle;
+            if ( gridView2.IsNewItemRow(ix) || gridView2.RowCount == 0 )
+            {
+                MessageBox.Show("삭제 대상이 존재하지 않습니다.");
+            }
+            else
+            {
+                string mapType = getMapTypeFromGridview2();
+                if ( mapType.Length > 0 )
+                {
+                    string errMsg_MachineMap = string.Empty;
+                    string errMsg_MapType = string.Empty;
+
+                    if ( gridView3.RowCount > 0 )
+                    {
+                        DialogResult question = MessageBox.Show("기존에 등록된 설비 메모리맵 데이터가 존재합니다.\n\r삭제하시겠습니까?", "맵타입 삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if ( question == DialogResult.Yes )
+                        {
+                            //machinememorymap 먼저 삭제
+                            errMsg_MachineMap = memorymapSettingHelper.deleteMachineMemoryMap(gridView3.GetDataRow(0), "all");
+                            if ( errMsg_MachineMap.Length > 0 )
+                                MessageBox.Show(errMsg_MachineMap, "삭제 실패");
+                            else
+                            {
+                                errMsg_MapType = memorymapSettingHelper.deleteMemoryMapType(mapType);
+                                if ( errMsg_MapType.Length > 0 )
+                                    MessageBox.Show(errMsg_MapType, "삭제 실패");
+                            }
+                        }
+                    }
+
+                    else
+                    {
+                        DialogResult question = MessageBox.Show("맵타입 데이터를 삭제하시겠습니까?", "맵타입 삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if ( question == DialogResult.Yes )
+                        {
+                            errMsg_MapType = memorymapSettingHelper.deleteMemoryMapType(mapType);
+                            if ( errMsg_MapType.Length > 0 )
+                                MessageBox.Show(errMsg_MapType, "삭제 실패");
+                        }
+                    }
+                }
+            }
+            updateMachineMemorymapSource();
+            updateMapTypeSource();
+        }
+        #endregion
+
+
+
+
+
+
+        #region MachineMemoryMap
+
+        private void updateMachineMemorymapSource()
+        {
+            try
+            {
+                string type = getMapTypeFromGridview2();
+                if ( type.Length > 0 )
+                {
+                    DataTable source = memorymapSettingHelper.getMachineMemorymap(type);
+                    gridControl3.DataSource = source;
+                }
+            }
+            catch ( Exception ex ) { MessageBox.Show(ex.Message); }
+        }
+
+        
+        private void addMachineMemorymap(object sender, EventArgs e) 
+        {
+
+            if ( gridView1.RowCount == 0 )
+            {
+                MessageBox.Show("메모리맵 베이스를 먼저 등록하세요.");
+            }
+            else
+            {
+                if ( gridView3.DataRowCount == 0 )
+                {
+                    FormAddMachineMemorymap addNew = new FormAddMachineMemorymap();
+                    string type = getMapTypeFromGridview2();
+                    if ( type.Length > 0 )
+                    {
+                        addNew.setMapType(type);
+                        addNew.ShowDialog();
+
+                        if ( addNew.ExceptionMessage.Length > 0 )
+                            MessageBox.Show(addNew.ExceptionMessage);
+                        else
+                            updateMachineMemorymapSource();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("항목이 존재하지 않을때만 사용가능합니다.\n사용하시려면 현재 존재하는 항목을 삭제해주세요\n");
+                }                
+            }
+        }
+      
+
+
+        private void gridView3_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            DataRow tmp = gridView3.GetDataRow(gridView3.FocusedRowHandle);
+            
+            string errorMsg = string.Empty;
+            string maptype = string.Empty;
+            int countBlanks = checkAnyBlanks("MachineMap", tmp);
+
+            if ( countBlanks > 0 )
+            {
+                MessageBox.Show("입력하지 않은 항목이 존재합니다.\n\r확인하세요.");
+            }
+            else
+            {
+                try
+                {
+                    maptype = getMapTypeFromGridview2();
+                    if ( maptype.Length > 0 )
+                    {
+                        if ( gridView3.IsNewItemRow(e.RowHandle) )
+                        {
+                            if ( machineSelected != 1 )
+                                MessageBox.Show("다른 작업이 진행중입니다.\n\r추가할 수 없습니다.");
+                            else
+                            {
+                                errorMsg = memorymapSettingHelper.insertMachineMemoryMap(tmp, maptype);
+                                if ( errorMsg.Length > 0 )
+                                    MessageBox.Show(errorMsg, "설비별 메모리맵 등록 실패");
+                            }
+
+                        }
+                        else
+                        {
+                            if ( machineSelected != 2 )
+                                MessageBox.Show("다른 작업이 진행중입니다.\n\r수정할 수 없습니다.");
+                            else
+                            {
+                                errorMsg = memorymapSettingHelper.updateMachineMemoryMap(tmp, maptype);
+                                if ( errorMsg.Length > 0 )
+                                    MessageBox.Show(errorMsg, "설비별 메모리맵 등록 실패");
+                            }
+                        }
+                    }
+                }
+                catch ( Exception ex ) { MessageBox.Show(ex.Message); }
+            }
+            updateMachineMemorymapSource();
+        }
+
+
+        private void deleteMachineMemorymap(object sender, EventArgs e)
+        {
+
+             int ix = gridView3.FocusedRowHandle;
+             if ( gridView3.IsNewItemRow(ix) || gridView3.RowCount == 0 )
+             {
+                 MessageBox.Show("삭제 대상이 존재하지 않습니다.");
+             }
+             else
+             {
+                 string errMsg_MachineMap = string.Empty;
+
+                 DataRow row = gridView3.GetDataRow(gridView3.FocusedRowHandle);
+
+
+                 if ( ((SimpleButton)sender).Name == "btnDeleteMachinemap" )
+                 {
+                     //단일항목삭제
+                     DialogResult question = MessageBox.Show("선택한 데이터를 삭제하시겠습니까?", "설비별 메모리맵 삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                     if ( question == DialogResult.Yes )
+                     {
+                         errMsg_MachineMap = memorymapSettingHelper.deleteMachineMemoryMap(row, "single");
+                         if ( errMsg_MachineMap.Length > 0 )
+                             MessageBox.Show(errMsg_MachineMap, "삭제 실패");
+                     }
+                 }
+                 else
+                 {
+                     //전체삭제
+
+                     DialogResult question = MessageBox.Show("등록된 데이터를 모두 삭제하시겠습니까?", "설비별 메모리맵 삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                     if ( question == DialogResult.Yes )
+                     {
+                         errMsg_MachineMap = memorymapSettingHelper.deleteMachineMemoryMap(row, "all");
+                         if ( errMsg_MachineMap.Length > 0 )
+                             MessageBox.Show(errMsg_MachineMap, "삭제 실패");
+                     }
+                 }
+             }
+            updateMachineMemorymapSource();
+        }
+
+        #endregion
+
+       
+
+      
+
+
+    }
+}
